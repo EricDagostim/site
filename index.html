@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Prefeitura de Criciúma</title>
+</head>
+<body>
+    <!-- modal -->
+    <div class="modal fade" id="modalSearchServices" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSearchServices" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Procurar por serviços</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <a class="text-color-details mb-4 mt-0" href="#">Como funcionam os filtros?</a>
+                <div class="content-search-services">
+                    <div class="box-search-services">
+                        <input type="text" placeholder="Pesquisar por nome do serviço ...">
+                        <button class="button-search" title="Pesquisar">
+                            <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+                        </button>
+                    </div>
+
+                    <div class="search-filters">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Categoria do serviço</option>
+                            <option value="1">Cidadão</option>
+                            <option value="2">Empresa</option>
+                            <option value="3">Educação</option>
+                            <option value="4">Saúde</option>
+                            <option value="5">Social</option>
+                            <option value="6">Trânsito</option>
+                            <option value="7">Meio Ambiente</option>    
+                        </select>
+                        <div class="badge rounded-pill text-color-details" style="background-color: #E0E9C4">
+                            <i class="fa-solid"></i> Selecionar a ordem de listagem.
+                        </div>
+                        <button class="btn btn-outline btn-order-by" style="color: #5B933A;"><i class="fa-regular fa-clock"></i> Recentes</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer" style="justify-content: center;">
+              <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: #ffcece88; color: #B80A15">Cancelar</button>
+              <button type="button" class="btn" style="background-color: #5B933A; color: #fff">Buscar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- modal -->
+
+    <div class="container-fluid">
+        
+        <div class="row img-header">
+
+            <div class="overlay-header"></div>
+            
+            <div class="content-header">
+                <div class="align-content-search mt-4">
+                    <h4 class="text-white">Como podemos ajudar?</h4>
+                    
+                    <div class="box-search">
+                        <input type="text" placeholder="Pesquisar dentro do site">
+                        <button class="button-search">
+                            <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="align-content-favorites mt-5">
+
+                    
+                
+                    <div>
+                        <h6 class="text-white">Seus serviços fixados: <h6>
+                    </div>
+                    
+                    <div class="box-favorited mt-1">    
+    
+                        <div class="service-favorite">
+                            
+                            <div class="info-service-bar">      
+                                <button class="btn btn-pin">
+                                     <img src="img\pin.svg" alt="SVG favorito">
+                                </button>
+                                <p class="m-0 p-data">Atualizado 27/01/2023</p>
+
+                            </div>
+    
+                            
+
+                            <a class="info-service-favorite" href="#" id="scroll1">
+                                <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                            </a>
+
+                        </div>
+
+                        <div class="service-favorite">
+                            
+                            <div class="info-service-bar">      
+                                <button class="btn btn-pin">
+                                     <img src="img\pin.svg" alt="SVG favorito">
+                                </button>
+                                <p class="m-0 p-data">Atualizado 27/01/2023</p>
+
+                            </div>
+    
+                            
+
+                            <a class="info-service-favorite" href="#" id="scroll2">
+                                <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos.. </h6>
+                            </a>
+
+                        </div>
+
+                        <div class="service-favorite">
+                            
+                            <div class="info-service-bar">      
+                                <button class="btn btn-pin">
+                                     <img src="img\pin.svg" alt="SVG favorito">
+                                </button>
+                                <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                            </div>
+    
+                            <a class="info-service-favorite" href="#" id="scroll3">
+                                <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                            </a>
+                        </div>     
+
+                        <div class="service-favorite">
+                            
+                            <div class="info-service-bar">      
+                                <button class="btn btn-pin">
+                                     <img src="img\pin.svg" alt="SVG favorito">
+                                </button>
+                                <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                            </div>
+    
+                            <a class="info-service-favorite" href="#" id="scroll4">
+                                <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                            </a>
+                        </div>   
+                        
+                        <div class="service-favorite">
+                            
+                            <div class="info-service-bar">      
+                                <button class="btn btn-pin">
+                                     <img src="img\pin.svg" alt="SVG favorito">
+                                </button>
+                                <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                            </div>
+    
+                            <a class="info-service-favorite" href="#" id="scroll5">
+                                <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <h4 class="text-color-primary text-center-625">Todos os serviços:</h4>
+                <p class="text-services text-center-625">Pesquise pelos serviços e públicações oficiais ofertados pela Prefeitura Municipal de Criciúma. 
+                <a class="text-color-details none-625" href="#">Como funcionam os filtros?</a>
+
+
+                    <div class="content-search-services">
+
+                        <div class="box-search-services display-search">
+                            <input type="text" placeholder="Pesquisar por nome do serviço ...">
+                            <button class="button-search" title="Pesquisar">
+                                <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+                            </button>
+                        </div>
+    
+                        <div class="search-filters display-search">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Categoria do serviço</option>
+                                <option value="1">Cidadão</option>
+                                <option value="2">Empresa</option>
+                                <option value="3">Educação</option>
+                                <option value="4">Saúde</option>
+                                <option value="5">Social</option>
+                                <option value="6">Trânsito</option>
+                                <option value="7">Meio Ambiente</option>    
+                            </select>
+            
+                            <button class="btn btn-outline btn-order-by" style="color: #5B933A;"><i class="fa-regular fa-clock"></i> Recentes</button>
+                        </div>
+
+                        <div class="search-filters-mobile">
+                        
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSearchServices" style="background-color: #5B933A; color: #fff"><i class="fa-solid fa-magnifying-glass"></i> Procurar por serviços</button>
+                        </div>
+
+                    </div>
+
+
+                    
+                        <div class="col-12 mt-5 mt-lg-5">
+                            <div class="search-parameters">
+                                <h5 class="text-color-details m-0">Cidadão</h5>
+                                
+                                <div class="badge rounded-pill text-color-details" style="background-color: #E0E9C4">
+                                    <i class="fa-solid fa-magnifying-glass"></i> "Diário Oficial".
+                                </div>
+                                <div class="badge rounded-pill text-color-details" style="background-color: #E0E9C4">
+                                    <i class="fa-regular fa-clock"></i> Recentes.
+                                </div>
+                                
+                                <hr class="border border-1 line-list-services" style="width: 100%; border-color: #5B933A !important;">
+                            </div>
+                            <p class="text-color-primary m-0 badge" style="background-color: #c9d89931;">63 serviços encontrados.</p>
+                            <div class="row list-services">
+                                
+                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                    <a class="service" href="#">
+                                        <div class="info-service">      
+                                            <button class="btn btn-pin">
+                                                <img src="img\pin.svg" alt="SVG favorito">
+                                            </button>
+                                            <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                                        </div>    
+                                        
+                                        <div class="link-service">
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                        </div>
+                                    </a>
+                                </div>
+        
+        
+                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                    <a class="service" href="#">
+                                        <div class="info-service">      
+                                            <button class="btn btn-pin">
+                                                 <img src="img\pin.svg" alt="SVG favorito">
+                                            </button>
+                                            <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                                        </div>    
+                                        
+                                        <div class="link-service">
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                    <a class="service" href="#">
+                                        <div class="info-service">      
+                                            <button class="btn btn-pin">
+                                                 <img src="img\pin.svg" alt="SVG favorito">
+                                            </button>
+                                            <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                                        </div>    
+                                        
+                                        <div class="link-service">
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                    <a class="service" href="#">
+                                        <div class="info-service">      
+                                            <button class="btn btn-pin">
+                                                 <img src="img\pin.svg" alt="SVG favorito">
+                                            </button>
+                                            <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                                        </div>    
+                                        
+                                        <div class="link-service">
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                    <a class="service" href="#">
+                                        <div class="info-service">      
+                                            <button class="btn btn-pin">
+                                                 <img src="img\pin.svg" alt="SVG favorito">
+                                            </button>
+                                            <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                                        </div>    
+                                        
+                                        <div class="link-service">
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                        </div>
+                                    </a>
+                                </div>
+        
+                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                    <a class="service" href="#">
+                                        <div class="info-service">      
+                                            <button class="btn btn-pin">
+                                                 <img src="img\pin.svg" alt="SVG favorito">
+                                            </button>
+                                            <p class="m-0 p-data">Atualizado 27/01/2023</p>
+                                        </div>    
+                                        
+                                        <div class="link-service">
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    
+    
+      
+          
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+</script>
+
+

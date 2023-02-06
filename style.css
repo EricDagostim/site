@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+body{
+    overflow-x: hidden;
+} */
+
+
+/* Cores Texto */
+
+.text-color-primary{
+    color: #304126 !important
+}
+
+.text-color-details{
+    color: #5B933A !important
+}
+
+.text-color-white{
+    color: #ffffff !important
+}
+
+/* Cores Texto */
+
+
+/* Cores background */
+
+.bg-color-primary{
+    background-color: #304126 !important
+}
+
+.bg-color-details{
+    background-color: #5B933A !important
+}
+
+.bg-color-details-op{
+    background-color: #5b933a34 !important
+}
+
+
+/* Cores background */
+
+
+
+
+input{
+    outline: none;
+    border: none
+}
+  
+input:focus{
+    outline: none;
+    border: none
+}
+
+.img-header{
+    background-image: url('img/IMG-HEADER.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -200px;
+    
+    height: 400px;
+}
+
+.overlay-header{
+    background-color: #2e501a69;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    transition: 200ms;
+
+    backdrop-filter: blur(2px);
+}
+
+.content-header{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.align-content-search{
+    z-index: 999;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.align-content-favorites{
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.box-search{
+    display: flex;
+    background-color : #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 50vw;
+}
+
+.box-search input{
+    width: 100%;
+}
+
+.box-search button{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: transparent;
+}
+
+.service-favorite{
+    display: flex;
+    background-color: #fff;
+    color: #304126;
+    padding: 5px 10px;
+    border-radius: 5px;
+    align-items: flex-end;
+    text-decoration: none !important;
+    width: 260px;
+    min-width: 200px;
+    flex-direction: column; 
+}
+
+.service-favorite-void{
+    display: flex;
+    font-size: 0.9rem;
+    background-color: #ffffff2d;
+    color: #ffffffb0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #cdcdcd60;
+    align-items: center;
+    text-decoration: none !important;
+    width: 260px;
+    font-weight: 400;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-service-favorite{
+    color: #304126;
+    text-decoration: none;
+    margin: 2px 0px;
+    padding: 5px 2px;
+    border-radius: 5px;
+    
+}
+
+.info-service-favorite:hover{
+    color: #304126;
+    background-color: #92b23338 !important;
+}
+
+
+.p-data{
+    color: #93B233;
+    font-size: 0.7rem;
+}
+
+.box-favorited{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 85%;
+    overflow-x: auto;
+    padding: 10px;
+    border-radius: 15px;  
+}
+
+.btn-pin{
+    border-radius: 50% !important;
+    padding: 3px 8px !important;
+
+}
+
+.btn-pin img{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+.btn-pin:hover{  
+    background-color: #92b23338 !important;
+}
+
+.btn-pin:hover + .info-service-bar button img{
+    
+}
+
+
+
+.info-service-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;    
+}
+
+
+
+.info-service-favorite h6{
+    font-size: 0.9rem;
+}
+
+
+/* servicos atalho*/
+.shortcut-top-services{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info-service-shortcut{
+    display: flex !important;
+    text-decoration: none !important;
+    font-size: 0.8rem;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.link-top-services{
+    display: flex;
+    text-decoration: none;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 200ms;
+}
+
+.link-top-services:hover{
+    box-shadow: 0px 0px 0px 4px #5b933a34;
+    border: 1px solid #cdcdcd;
+    transition: 400ms;
+}
+
+.box-search-services{
+    display: flex;
+    background-color : #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 60%;
+    border: 1px solid #cdcdcd;
+
+}
+
+.box-search-services:focus-within{
+    border-color: #5B933A !important;
+    box-shadow: 0 0 0 0.25rem #5b933a50 !important;
+}
+
+.box-search-services input{
+    width: 100%;
+}
+
+.box-search-services button{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: transparent;
+}
+
+.box-search-services button:hover{
+    background-color: #cdcdcd36;
+}
+
+.search-filters{
+    display: flex;
+    gap: 10px;
+}
+
+.search-parameters{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
+}
+
+.search-filters select{
+    width: 40%;
+}
+
+.content-search-services{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-order-by{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 5px;
+    max-width: 20%;
+    border: 1px solid #cdcdcd !important; 
+}
+
+.btn-order-by:hover{
+    border: 1px solid #5B933A !important;
+}
+
+.btn-order-by:focus{
+    color: #fff !important;
+    background-color: #5B933A !important;
+}
+
+.btn-search-mobile{}
+
+.form-select:focus{
+    border-color: #5B933A !important;
+    box-shadow: 0 0 0 0.25rem #5b933a50 !important;
+}
+
+.service{
+    display: flex;
+    /* align-items: flex-end;     */
+    flex-direction: column;
+    width : 100%;
+    height: auto;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #c9d89931;
+    text-decoration: none;
+}
+
+.service:hover{
+    background-color: #c9d89988;
+}
+
+.info-service{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.link-service{
+    color: #304126;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+.link-service:hover{
+    color: #304126;    
+}
+
+.text-services{
+    max-width: 50%;
+}
+
+
+/* servicos atalho*/
+
+.search-filters-mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

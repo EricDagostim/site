@@ -1,0 +1,155 @@
+
+@media (max-width : 1250px){
+    .box-favorited{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width : 1140px){
+    .img-header{
+        background-position-y: -100px;
+
+    }
+
+    .text-services{
+        max-width: 70%;
+    }
+}
+
+
+@media (max-width : 992px){
+    .box-search {
+        width: 80vw;
+      }
+
+    
+}
+
+
+@media (max-width : 772px){
+
+    .btn-order-by{
+        max-width: 40%
+        
+    }
+
+    .search-filters select{
+        max-width: 60%;
+    }
+
+    .img-header{
+        background-position-x: -150px;
+    }
+
+    .text-services{
+        max-width: 100%;
+    }
+
+    .box-favorited{
+       justify-content: flex-start;
+       width: 100%;
+
+    }
+
+    .box-search-services {
+        width: 100%;      
+    }
+}
+
+@media (max-width : 625px){
+
+    .img-header{
+        background-position-x: -250px;
+        
+    }
+
+    .align-content-search {
+        align-items: center;
+    }
+
+    .box-search button{
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding: 2px;
+        background-color: transparent;
+    }
+
+    .box-search button img{
+        width: 20px;
+    }
+
+    .box-search input{
+        font-size: 0.8rem;
+    }
+
+    .display-search {
+        display: none;
+    }
+
+    .search-filters-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .search-filters {
+        flex-direction: column;
+    }
+
+    .search-filters select {
+       max-width: 100%;
+       width: 100%;
+    }
+
+    .btn-order-by{
+        max-width: 100% !important; 
+        width: 100% !important;
+    }
+    
+    .none-625{
+        display: none;
+    }
+
+    .text-center-625{
+        text-align: center;
+    }
+
+}
+
+@media (max-width : 425px){
+
+    .img-header{
+        background-position-x: -300px;
+        
+    }
+
+    
+
+
+
+
+}
+
+@media (max-width : 320px){
+
+    .img-header{
+        background-position-x: -600px;
+        
+    }
+
+    .line-list-services{
+        display: none !important;
+    }
+
+    .search-parameters{
+        flex-wrap: wrap;
+    }
+
+    
+
+}
+
+@media (max-width : 300px){
+    
+    
+}
