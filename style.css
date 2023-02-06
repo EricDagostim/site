@@ -122,7 +122,7 @@ input:focus{
 }
 
 .service-favorite{
-    display: flex;
+    /* display: flex;
     background-color: #fff;
     color: #304126;
     padding: 5px 10px;
@@ -131,7 +131,23 @@ input:focus{
     text-decoration: none !important;
     width: 260px;
     min-width: 200px;
-    flex-direction: column; 
+    flex-direction: column; */
+
+    display: flex;
+    background-color: #fff;
+    color: #304126;
+    padding: 0px 10px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    width: auto;
+    min-width: auto;
+    flex-direction: column;
+}
+
+.service-favorite:hover{
+    /* color: #304126;
+    background-color: #92b233 !important; */
+    box-shadow: 0px 0px 0px 4px #92b2338e;
 }
 
 .service-favorite-void{
@@ -159,10 +175,7 @@ input:focus{
     
 }
 
-.info-service-favorite:hover{
-    color: #304126;
-    background-color: #92b23338 !important;
-}
+
 
 
 .p-data{
