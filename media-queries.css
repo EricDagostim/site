@@ -47,8 +47,6 @@
 
     .box-favorited{
        justify-content: flex-start;
-       width: 100%;
-
     }
 
     .box-search-services {
@@ -57,6 +55,13 @@
 }
 
 @media (max-width : 625px){
+
+    .align-content-favorites {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
 
     .img-header{
         background-position-x: -250px;
@@ -68,7 +73,7 @@
         
     }
 
-    .align-div-mobile{
+    .content-main-services{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -122,6 +127,8 @@
     .text-center-625{
         text-align: center;
     }
+
+    
 
 }
 
