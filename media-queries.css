@@ -65,6 +65,14 @@
 
     .align-content-search {
         align-items: center;
+        
+    }
+
+    .align-div-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
     }
 
     .box-search button{
@@ -139,18 +147,14 @@
     }
 
     .line-list-services{
-        display: none !important;
+        /* display: none !important; */
     }
 
-    .search-parameters{
+    /* .search-parameters{
         flex-wrap: wrap;
-    }
+    } */
 
     
 
 }
 
-@media (max-width : 300px){
-    
-    
-}

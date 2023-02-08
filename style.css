@@ -5,11 +5,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* 
-body{
-    overflow-x: hidden;
-} */
-
 
 /* Cores Texto */
 
@@ -196,6 +191,7 @@ input:focus{
 .btn-pin{
     border-radius: 50% !important;
     padding: 3px 8px !important;
+    z-index: 999 !important;
 
 }
 
@@ -205,7 +201,9 @@ input:focus{
 }
 
 
-
+.btn-pin{
+    border-color: #cdcdcd48 !important;
+}
 
 .btn-pin:hover{  
     background-color: #92b23338 !important;
@@ -345,29 +343,42 @@ input:focus{
 
 .service{
     display: flex;
-    /* align-items: flex-end;     */
-    flex-direction: column;
+    flex-direction: column-reverse;
     width : 100%;
     height: auto;
     gap: 5px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #c9d89931;
+    background-color: #c9d8991e;
     text-decoration: none;
+
+    transition: 200ms;
 }
 
 .service:hover{
-    background-color: #c9d89988;
+    transition: 200ms;
+    color: #dadada !important;
+    padding-top: 5px;
+    box-shadow:  5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff;
 }
+
 
 .info-service{
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     gap: 10px;
+    background-color: #00000000;
+    
+    border-top: 1px solid #00000015;
+    border-bottom: 1px solid #00000015;
+    
+    justify-content: space-between;
+    padding: 5px 15px;
 }
 
 .link-service{
+    /* word-break: break-all; */
     color: #304126;
     text-decoration: none;
     margin-bottom: 5px;
@@ -375,14 +386,15 @@ input:focus{
     border-radius: 5px;
 }
 
-.link-service:hover{
-    color: #304126;    
+.link-service i{
+    color: #5B933A;font-size: 1.5rem;
 }
 
-.text-services{
-    max-width: 50%;
+.link-service h6{
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
 }
-
 
 /* servicos atalho*/
 

@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- modal -->
-    <div class="modal fade" id="modalSearchServices" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSearchServices" aria-hidden="true">
+    <!-- <div class="modal fade" id="modalSearchServices" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSearchServices" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -20,33 +20,9 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <a class="text-color-details mb-4 mt-0" href="#">Como funcionam os filtros?</a>
-                <div class="content-search-services">
-                    <div class="box-search-services">
-                        <input type="text" placeholder="Pesquisar por nome do serviço ...">
-                        <button class="button-search" title="Pesquisar">
-                            <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
-                        </button>
-                    </div>
+                
 
-                    <div class="search-filters">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Categoria do serviço</option>
-                            <option value="1">Cidadão</option>
-                            <option value="2">Empresa</option>
-                            <option value="3">Educação</option>
-                            <option value="4">Saúde</option>
-                            <option value="5">Social</option>
-                            <option value="6">Trânsito</option>
-                            <option value="7">Meio Ambiente</option>    
-                        </select>
-                        <div class="badge rounded-pill text-color-details" style="background-color: #E0E9C4">
-                            <i class="fa-solid"></i> Selecionar a ordem de listagem.
-                        </div>
-                        <button class="btn btn-outline btn-order-by" style="color: #5B933A;"><i class="fa-regular fa-clock"></i> Recentes</button>
-                    </div>
-
-                </div>
+                
             </div>
             <div class="modal-footer" style="justify-content: center;">
               <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: #ffcece88; color: #B80A15">Cancelar</button>
@@ -54,9 +30,9 @@
             </div>
           </div>
         </div>
-    </div>
-
+    </div> -->
       <!-- modal -->
+
 
     <div class="container-fluid">
         
@@ -151,12 +127,16 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mt-4">
-                <h4 class="text-color-primary text-center-625">Todos os serviços:</h4>
-                <p class="text-services text-center-625">Pesquise pelos serviços e públicações oficiais ofertados pela Prefeitura Municipal de Criciúma. 
-                <a class="text-color-details none-625" href="#">Como funcionam os filtros?</a>
+                    <div class="col-12">
 
+                        <div class="align-div-mobile">
+                            <h4 class="text-color-primary text-center-625">Serviços em destaque:</h4>
+                            <p class="text-services text-center-625">Os principais serviços da prefeitura municipal de Criciúma aqui. Ou procure por um serviço específico em todos os serviços</p>
+                            <button class="btn btn-success">Todos os serviços</button>
+                        </div>
+                    </div>
 
-                    <div class="content-search-services">
+                    <!-- <div class="content-search-services">
 
                         <div class="box-search-services display-search">
                             <input type="text" placeholder="Pesquisar por nome do serviço ...">
@@ -181,14 +161,12 @@
                         </div>
 
                         <div class="search-filters-mobile">
-                            
-                            <button type="button" class="btn btn-outline " style="color: #5B933A; border-color: #5B933A;"><i class="fa-solid fa-star"></i> Serviços Destacados</button>
 
                             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSearchServices" style="background-color: #5B933A; color: #fff"><i class="fa-solid fa-arrow-up-right-from-square"></i> Todos os serviços</button>
                             
                         </div>
 
-                    </div>
+                    </div> -->
 
 
                     
@@ -196,20 +174,24 @@
                             <div class="search-parameters">
                                 <h5 class="text-color-details m-0">Favoritos</h5>
                                 
+                                
+                                <hr class="border border-1 line-list-services" style="width: 100%; border-color: #5B933A !important;">
+
                                 <!-- <div class="badge rounded-pill text-color-details" style="background-color: #E0E9C4">
                                     <i class="fa-solid fa-magnifying-glass"></i> "Diário Oficial".
                                 </div> -->
+                                
                                 <div class="badge rounded-pill text-color-details" style="background-color: #E0E9C4">
                                     <i class="fa-regular fa-clock"></i> Recentes.
                                 </div>
                                 
-                                <hr class="border border-1 line-list-services" style="width: 100%; border-color: #5B933A !important;">
                             </div>
-                            <!-- <p class="text-color-primary m-0 badge" style="background-color: #c9d89931;">25 serviços encontrados.</p> -->
+                            <!-- <p class="m-0 badge" style="background-color: #cccccc; color: #000">Listando 5 de 5</p> -->
+                            
                             <div class="row list-services">
                                 
                                 <div class="col-12 col-md-6 col-lg-4 mt-3">
-                                    <a class="service" href="#">
+                                    <a class="service">
                                         <div class="info-service">      
                                             <button class="btn btn-pin">
                                                 <img src="img\pin.svg" alt="SVG favorito">
@@ -218,7 +200,7 @@
                                         </div>    
                                         
                                         <div class="link-service">
-                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos.</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -234,7 +216,7 @@
                                         </div>    
                                         
                                         <div class="link-service">
-                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos.</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -249,7 +231,7 @@
                                         </div>    
                                         
                                         <div class="link-service">
-                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos.</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -264,7 +246,7 @@
                                         </div>    
                                         
                                         <div class="link-service">
-                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos.</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -279,7 +261,7 @@
                                         </div>    
                                         
                                         <div class="link-service">
-                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos.</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -294,7 +276,7 @@
                                         </div>    
                                         
                                         <div class="link-service">
-                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos..</h6>
+                                            <h6 class="m-0"><i class="fa-solid fa-book"></i>    Audiência Pública – Remoção, Guarda e Liberação de Veículos.</h6>
                                         </div>
                                     </a>
                                 </div>
