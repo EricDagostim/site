@@ -5,7 +5,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
 /* Cores Texto */
 
 .text-color-primary{
@@ -36,6 +35,11 @@
 .bg-color-details-op{
     background-color: #5b933a34 !important
 }
+
+
+
+
+
 
 
 /* Cores background */
@@ -139,6 +143,8 @@ input:focus{
     margin: 2px 0px;
     padding: 5px 2px;
     border-radius: 5px;
+    word-break: normal;
+    word-wrap: normal;
 }
 
 .info-service-favorite i{
@@ -380,6 +386,12 @@ input:focus{
     border-radius: 5px;
 }
 
+
+.placeholder-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 
 
