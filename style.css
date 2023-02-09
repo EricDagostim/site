@@ -63,18 +63,17 @@ input:focus{
     background-size: cover;
     background-attachment: fixed;
     background-position-y: -200px;
-    
-    height: 400px;
+    height: 230px;
 }
 
 .overlay-header{
     background-color: #2e501a69;
     width: 100%;
-    height: 400px;
+    height: 230px;
     position: absolute;
     transition: 200ms;
 
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
 }
 
 .content-header{
@@ -402,54 +401,6 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    margin-bottom: -105px;
-    z-index: 9999;
-    top: 30px;
-    position: sticky;
-    top: 0px;
-
-    transition: 500ms;
-}
-
-
-
-.list-links-nav{
-    overflow: hidden;
-    background-color: #fff;
-    list-style: none;
-    display: flex;
-    text-decoration: none;
-    gap: 25px;
-    margin: 0;
-    padding: 10px 25px;
-    border-radius: 5px;
-}
-
-.list-links-nav i{
-    color: #5B933A;
-}
-
-
-.list-links-nav-sticly{
-    overflow: hidden;
-    background-color: #5b933abb;
-    color: #ffffff;
-    list-style: none;
-    display: flex;
-    text-decoration: none;
-    gap: 25px;
-    margin: 0;
-    padding: 10px 25px;
-    width: 100%;
-    backdrop-filter: blur(10px);
-
-}
-
-.navbar-fixed{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     z-index: 9999;
     position: sticky;
@@ -461,7 +412,19 @@ input:focus{
     animation: name duration timing-function delay iteration-count direction fill-mode;
     animation: width 200ms linear;
 }
-
+.list-links-nav{
+    overflow: hidden;
+    background-color: #5b933abb;
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    gap: 25px;
+    margin: 0;
+    padding: 10px 25px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
 @keyframes width {
     0%{ 
         top: -80px;
@@ -481,6 +444,14 @@ input:focus{
     display: none !important;
 }
 
+.link-nav-acessibilidade{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffffff3d;
+}
 
 
 /* NavBar */

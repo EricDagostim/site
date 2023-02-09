@@ -27,7 +27,7 @@
             <li> Notícias</li>
             <li> Ouvidoria</li>
             <li> Contato</li>
-            <li>Acessibilidade <i class="fa-solid fa-universal-access"></i></li>
+            <li><a class="link-nav-acessibilidade" href="#">Acessibilidade <i class="fa-solid fa-universal-access"></i></a></li>
         </ul>
     </nav>
 
@@ -75,23 +75,23 @@
 
     <div class="container-fluid"> 
         <div class="row img-header">
-            <div class="overlay-header"></div>
-            
-            <div class="content-header">
-                <div class="align-content-search mt-4">
-                    <h4 class="text-white">Como podemos ajudar?</h4>
-                    
-                    <div class="box-search">
-                        <input type="text" placeholder="Pesquisar dentro do site">
-                        <button class="button-search">
-                            <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
-                        </button>
+            <div class="col-12 overlay-header"></div>
+                <div class="content-header">
+                    <div class="align-content-search mt-4">
+                        <h5 class="text-white">Como podemos ajudar?</h5>
+
+                        <div class="box-search">
+                            <input type="text" placeholder="Pesquisar dentro do site">
+                            <button class="button-search">
+                                    <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div>          
+                </div>          
+            </div>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-12 mt-4">
@@ -119,7 +119,7 @@
                             <a class="service-favorite" href="#">
                                 <div class="info-service-bar">      
                                     <div class="info-service-favorite" id="scroll1">
-                                        <h6 class="m-0"><i class="fa-solid fa-book"></i>   Horário de ônibus</h6>
+                                        <h6 class="m-0"><i class="fa-solid fa-bus"></i>  Horário de ônibus</h6>
                                     </div>                                  
                                 </div>
                             </a>
@@ -372,29 +372,29 @@
     
     
 
-    let navbar = document.getElementById("navbar");
-    let navLinks = document.getElementById("navlinks");
-    let navPos = navbar.getBoundingClientRect().top;
+    // let navbar = document.getElementById("navbar");
+    // let navLinks = document.getElementById("navlinks");
+    // let navPos = navbar.getBoundingClientRect().top;
     
-    window.addEventListener("scroll", e => {
-        let viewportHeight = window.innerHeight;
-        let scrollPos = window.scrollY;
+    // window.addEventListener("scroll", e => {
+    //     let viewportHeight = window.innerHeight;
+    //     let scrollPos = window.scrollY;
 
-        if (scrollPos > navPos + 60) {
-            navbar.classList.add('navbar-fixed');
-            navbar.classList.remove('navbar-float');
+    //     if (scrollPos > navPos + 60) {
+    //         navbar.classList.add('navbar-fixed');
+    //         navbar.classList.remove('navbar-float');
 
 
-            navLinks.classList.add('list-links-nav-sticly');
-            navLinks.classList.remove('list-links-nav');
-        } else {
-            navbar.classList.remove('navbar-fixed');
-            navbar.classList.add('navbar-float');
+    //         navLinks.classList.add('list-links-nav-sticly');
+    //         navLinks.classList.remove('list-links-nav');
+    //     } else {
+    //         navbar.classList.remove('navbar-fixed');
+    //         navbar.classList.add('navbar-float');
 
-            navLinks.classList.remove('list-links-nav-sticly');
-            navLinks.classList.add('list-links-nav');            
-        }
-    });
+    //         navLinks.classList.remove('list-links-nav-sticly');
+    //         navLinks.classList.add('list-links-nav');            
+    //     }
+    // });
 </script>
 
 
