@@ -54,7 +54,20 @@
     }
 }
 
+@media (max-width : 772px){
+    .navbar-mobile{
+        display: block !important;
+    }
+
+    .navbar-desktop{
+        display: none;
+    }
+}
+
 @media (max-width : 625px){
+
+
+    
 
     .placeholder-text{
         display: flex;

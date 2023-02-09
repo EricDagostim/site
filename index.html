@@ -18,12 +18,65 @@
     </div>
 
 <main class="content">
-
     
+    <nav id="navbar" class="navbar-desktop navbar-float">
+        <ul id="navlinks" class="list-links-nav">
+            <li><i class="fa-solid fa-house"></i> Início</li>
+            <li> Editais</li>
+            <li> Serviços</li>
+            <li> Notícias</li>
+            <li> Ouvidoria</li>
+            <li> Contato</li>
+            <li>Acessibilidade <i class="fa-solid fa-universal-access"></i></li>
+        </ul>
+    </nav>
+
+    <nav class="navbar fixed-top navbar-mobile" style="background-color: #5B933A;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo-criciuma-branca.png" alt="Logo" width="45px" height="35px" class="d-inline-block align-text-top">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon navbar-desktop"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-file-invoice"></i> Editais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-newspaper"></i> Notícias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-headset"></i> Ouvidoria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-phone"></i> Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-universal-access"></i> Acessibilidade</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
     <div class="container-fluid"> 
         <div class="row img-header">
             <div class="overlay-header"></div>
-          
+            
             <div class="content-header">
                 <div class="align-content-search mt-4">
                     <h4 class="text-white">Como podemos ajudar?</h4>
@@ -38,7 +91,7 @@
             </div>          
         </div>
     </div>
-
+    
     <div class="container">
         <div class="row">
             <div class="col-12 mt-4">
@@ -52,7 +105,7 @@
                         
 
                         
-                        <div class="box-favorited mt-1 p-0">    
+                        <div class="box-favorited mt-1 p-0" >    
                             
                         
                             <a class="service-favorite" href="#">
@@ -132,7 +185,7 @@
                             
                             <div class="row list-services">
                                 
-                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                <div class="col-12 col-md-6 col-lg-4 mt-3 position-sticky">
                                     <a class="service">
                                         <div class="info-service">      
                                             <button class="btn btn-pin">
@@ -233,6 +286,18 @@
           
 
 <br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
     
 </body>
 </html>
@@ -304,9 +369,32 @@
             'display' : 'none'
         })
     }
-
+    
     
 
+    let navbar = document.getElementById("navbar");
+    let navLinks = document.getElementById("navlinks");
+    let navPos = navbar.getBoundingClientRect().top;
+    
+    window.addEventListener("scroll", e => {
+        let viewportHeight = window.innerHeight;
+        let scrollPos = window.scrollY;
+
+        if (scrollPos > navPos + 60) {
+            navbar.classList.add('navbar-fixed');
+            navbar.classList.remove('navbar-float');
+
+
+            navLinks.classList.add('list-links-nav-sticly');
+            navLinks.classList.remove('list-links-nav');
+        } else {
+            navbar.classList.remove('navbar-fixed');
+            navbar.classList.add('navbar-float');
+
+            navLinks.classList.remove('list-links-nav-sticly');
+            navLinks.classList.add('list-links-nav');            
+        }
+    });
 </script>
 
 
