@@ -56,9 +56,7 @@
 
 @media (max-width : 772px){
 
-    .container-header{
-        margin-top: 40px;
-    }
+    
 
     .navbar-mobile{
         display: block !important;
