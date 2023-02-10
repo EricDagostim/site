@@ -425,15 +425,14 @@ input:focus{
     width: 100%;
     backdrop-filter: blur(10px);
 }
+
 @keyframes width {
     0%{ 
         top: -80px;
-        /* width: 50%; */
     }
 
     100%{
         top: 0px;
-        /* width: 100%; */
     }
 }
 
@@ -452,6 +451,70 @@ input:focus{
     color: #fff;
     background-color: #ffffff3d;
 }
+
+
+.nav-link{
+    width: fit-content;
+    padding: 10px 25px;
+    color: #304126 !important;
+    padding: 10px 15px !important;
+    padding-right: 0 !important;
+}
+
+.nav-link i{
+    padding: 5px;
+    background-color: #93B233;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nav-item{
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 200ms;
+}
+
+.nav-item:hover .nav-link{    
+    padding-right: 10px !important;
+
+    transition: 200ms;
+}
+
+.nav-item:hover {
+    background-color: #5b933a36;
+    border-radius: 5px;
+}
+
+.offcanvas-body{
+    display: flex;
+    align-items: flex-start;
+    width: fit-content !important;
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px !important;
+}
+
+.offcanvas-header{
+    background-color: #5B933A;
+    color: #fff;
+}
+
+.offcanvas-header button i{
+    color: #fff;
+    padding: 2px;
+    font-size: 1rem;
+
+}
+
+
+
 
 
 /* NavBar */
