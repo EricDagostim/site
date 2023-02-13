@@ -427,16 +427,13 @@ input:focus{
     align-items: flex-start;
 }
 
-
-
-/* NavBar */
 .navbar-float{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     z-index: 9999;
-    position: sticky;
+    
     top: 0px;
     margin-top: 0px;
     margin-bottom: -45px;
@@ -444,6 +441,7 @@ input:focus{
     transition: 500ms;
     animation: width 200ms linear;
 }
+
 .list-links-nav{
     overflow: hidden;
     background-color: #5B933A;
@@ -484,12 +482,26 @@ input:focus{
     text-decoration: none;
     color: #fff;
     background-color: #ffffff1f;
+    white-space: nowrap;
 }
 
 .link-nav-acessibilidade:hover{
     color: #fff;
     background-color: #d0e29b4d;
     /* color: #d0e29b; */
+}
+
+.link-nav-redirect{
+    padding: 5px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+    /* background-color: #ffffff1f; */
+}
+
+.link-nav-redirect:hover{
+    color: #e2f5aa;
 }
 
 .list-links-nav li:hover{
@@ -506,22 +518,18 @@ input:focus{
 }
 
 .nav-link i{
-    padding: 5px;
-    background-color: #5B933A;
-    color: #fff;
-    
+    color: #5B933A;
     border-radius: 5px;
 }
 
 .nav-item{
     
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 100%;
-    transition: 200ms;
-
     background-color: #0a290009;
     border-radius: 5px;
+    transition: 200ms;
 }
 
 .nav-link{    
@@ -532,6 +540,7 @@ input:focus{
 
 .nav-item:hover {
     background-color: #6bb64059;
+    
 }
 
 .offcanvas-body{
