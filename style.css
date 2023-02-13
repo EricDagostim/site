@@ -213,7 +213,8 @@ input:focus{
     gap: 10px;
     justify-content: flex-start;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
+    flex-wrap: wrap;
 }
 
 .btn-pin-active{

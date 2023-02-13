@@ -56,7 +56,10 @@
 
 @media (max-width : 772px){
 
-    
+    .box-favorited {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
 
     .navbar-mobile{
         display: block !important;
