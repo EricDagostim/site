@@ -19,15 +19,14 @@
       <div class="modal-content">
         <div class="modal-header">
           <h6 class="modal-title">Pesquisar por conteúdo ou serviços</h6>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          
+          
         </div>
         <div class="modal-body ">
             <div class="box-search-modal mb-2">
                 <input id="inputSearchModal" class="input-search" type="text" placeholder="O que procura ?"> 
                 <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
             </div>
-          <!-- <p>Utilize palavras chaves, vamos te avisar se existem os resultados da pesquisa ou não.</p> -->
-
         <div style="display: flex; gap: 5px; align-items: center;">
             <div class="text-color-details badge bg-color-details-op m-0">Serviços</div>
             <div class="text-color-details badge bg-color-details-op rounded-pill m-0">4
@@ -109,9 +108,9 @@
 
           </div>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn bg-danger bg-opacity-25 text-danger" data-bs-dismiss="modal">Cancelar</button>
-        </div> -->
+        <div class="modal-footer" style="display: flex; justify-content: center;">
+          <button type="button" class="btn bg-secondary bg-opacity-25 text-dark" data-bs-dismiss="modal">Cancelar</button>
+        </div>
 
       </div>
     </div>
@@ -495,6 +494,7 @@
     function focus(){
 
         document.getElementById("inputSearchModal").focus();
+        
     }
 
 
