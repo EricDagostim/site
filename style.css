@@ -11,6 +11,10 @@
     color: #304126 !important
 }
 
+.text-color-secondary{
+    color: #3b3b3b !important
+}
+
 .text-color-details{
     color: #5B933A !important
 }
@@ -43,6 +47,10 @@
 
 .bg-color-details-op{
     background-color: #5b933a34 !important
+}
+
+.bg-color-secondary-op{
+    background-color: #4b4b4b17 !important;
 }
 
 
@@ -326,10 +334,6 @@ input:focus{
 
 }
 
-.box-search-services:focus-within{
-    border-color: #5B933A !important;
-    box-shadow: 0 0 0 0.25rem #5b933a50 !important;
-}
 
 .box-search-services input{
     width: 100%;
@@ -642,7 +646,7 @@ input:focus{
 */
 
 .box-search-modal{
-    border: 1px solid #5B933A;
+    border: 1px solid #acacac;
     padding: 5px 10px;
     border-radius: 5px;
     display: flex;
