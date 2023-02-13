@@ -11,6 +11,114 @@
     <title>Prefeitura de Criciúma</title>
 </head>
 <body onload="isLoad()">
+
+<!-- MODALS -->
+
+<div id="modalSearch" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Pesquisar por conteúdo ou serviços</h5>
+        </div>
+        <div class="modal-body ">
+            <div class="box-search-modal mb-2">
+                <input id="inputSearchModal" class="input-search" type="text" placeholder="O que procura ?"> 
+                <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+            </div>
+          <!-- <p>Utilize palavras chaves, vamos te avisar se existem os resultados da pesquisa ou não.</p> -->
+
+        <div style="display: flex; gap: 5px; align-items: center;">
+            <div class="text-color-details badge bg-color-details-op m-0">Serviços</div>
+            <div class="text-color-details badge bg-color-details-op rounded-pill m-0">4
+            </div>
+            <hr class="border bg-secondary opacity-25" style="width: 100%; height: 4px;">
+        </div>
+          
+          <div class="list-services-found">
+
+              <a class="service-found bg-color-details-op" href="#">
+                  <div class="info-service-found">      
+                      <div class="info-service-favorite" id="scroll1">
+                          <h6 class="m-0 text-color-details"><i class="fa-solid fa-book"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                      </div>
+                  </div>  
+              </a>
+  
+              <a class="service-found bg-color-details-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-details"><i class="fa-solid fa-book"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+  
+            <a class="service-found bg-color-details-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-details"><i class="fa-solid fa-book"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-color-details-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-details"><i class="fa-solid fa-book"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+          </div>
+
+          <div class="mt-2" style="display: flex; gap: 5px; align-items: center;">
+              <div class="text-primary badge bg-primary bg-opacity-25">Notícias</div>
+              <div class="text-primary badge bg-primary bg-opacity-25 rounded-pill">3</div>
+              <hr class="border bg-secondary opacity-25" style="width: 100%; height: 4px;">
+          </div>
+
+          <div class="list-services-found">
+
+            <a class="service-found bg-primary bg-opacity-25" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-primary"><i class="fa-solid fa-book text-primary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-primary bg-opacity-25" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-primary"><i class="fa-solid fa-book text-primary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-primary bg-opacity-25" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-primary"><i class="fa-solid fa-book text-primary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            
+        </div>
+
+          <div class="list-found">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-danger bg-opacity-25 text-danger" data-bs-dismiss="modal">Cancelar</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- MODALS -->
+
     
     <div class="box-load">
         <div class="loading"></div>
@@ -82,12 +190,11 @@
                     <div class="align-content-search mt-4">
                         <h5 class="text-white">Como podemos ajudar?</h5>
 
-                        <div class="box-search">
-                            <input type="text" placeholder="Pesquisar dentro do site">
-                            <button class="button-search">
-                                    <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
-                            </button>
-                        </div>
+                        
+                        <button class="button-search" data-bs-toggle="modal" data-bs-target="#modalSearch" onclick="focus()">
+                                Pesquisar dentro do site
+                                <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+                        </button>
                     </div>
                 </div>          
             </div>
@@ -384,6 +491,18 @@
         })
     }
     
+    function focus(){
+
+        document.getElementById("inputSearchModal").focus();
+    }
+
+
+
+    // jquery modal aqui
+    // $(document).ready(function(){
+    //     $("#modalSearch").modal("show");
+        
+    // })
 
 </script>
 

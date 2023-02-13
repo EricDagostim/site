@@ -18,7 +18,7 @@
 
 
 @media (max-width : 992px){
-    .box-search {
+    .button-search {
         width: 80vw;
       }
 
@@ -49,7 +49,7 @@
        justify-content: flex-start;
     }
 
-    .box-search-services {
+    .button-search-services {
         width: 100%;      
     }
 }
@@ -102,19 +102,8 @@
         align-items: center
     }
 
-    .box-search button{
-        border: 1px solid transparent;
-        border-radius: 5px;
-        padding: 2px;
-        background-color: transparent;
-    }
-
-    .box-search button img{
+    .button-search img{
         width: 20px;
-    }
-
-    .box-search input{
-        font-size: 0.8rem;
     }
 
     .display-search {
