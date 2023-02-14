@@ -56,6 +56,15 @@
 
 @media (max-width : 772px){
 
+    .content-news h5{
+        display: none !important;
+    }
+
+
+    .content-news h1{
+        font-size: 1rem !important;
+    }
+
     .box-favorited {
         flex-wrap: nowrap;
         overflow-x: auto;
