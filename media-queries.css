@@ -82,7 +82,15 @@
 @media (max-width : 625px){
 
 
-    
+    .box-news img{
+        height: 110px;
+        
+    }
+
+    .box-news:hover img{
+        height: 80px;
+        transition: 400ms;
+    }
 
     .placeholder-text{
         display: flex;
