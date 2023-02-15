@@ -664,6 +664,7 @@ input:focus{
     display: flex;
     gap: 15px;
 
+    overflow-y: hidden;
     overflow-x: auto;
 }
 
@@ -671,12 +672,24 @@ input:focus{
     border-radius: 5px;
     border: 1px solid #cdcdcd;
     min-width: 350px ;
-    width: 350px;
+    width: 100%;
     text-decoration: none;
 }
 
 .box-news:hover h1{
-    text-decoration: underline;
+    color: #5B933A !important;
+    transition: 200ms;
+}
+
+.box-news:hover img{
+    height: 120px;
+    transition: 400ms;
+}
+
+.box-news:hover .read-new{
+    transition: 400ms;
+    opacity: 100% !important;
+    display: block !important;
 }
 
 .box-news .tag-new{
@@ -686,9 +699,16 @@ input:focus{
     margin-top: -20px;
 }
 
+.read-new{
+    opacity: 0%;
+    margin-bottom: -30px;
+    transition: 400ms;
+}
+
 .box-news img{
     width: 100%;
-    height: 200px;
+    transition: 200ms;
+    height: 150px;
     object-fit: cover;
     border-radius: 5px 5px 0px 0px;
 }
@@ -699,11 +719,6 @@ input:focus{
     padding: 10px 0px 2px 0px;
     margin: 0;
 }
-.box-news .content-news h1 span{
-    color: #5B933A;
-    font-weight: 800;
-}
-
 .box-news .content-news p{
     color: #acacac;
     font-size: 0.8rem;
