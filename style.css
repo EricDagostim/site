@@ -23,10 +23,16 @@
     color: #ffffff !important
 }
 
+.text-color-ligth-details{
+    color: #93B233 !important;
+}
+
 .text-link-details{
     color: #5B933A !important;
     text-decoration: underline;
 }
+
+
 
 .text-link-details:hover{
     color: #8cca68 !important;
