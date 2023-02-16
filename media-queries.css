@@ -56,6 +56,8 @@
 
 @media (max-width : 772px){
 
+   
+
     .content-news h5{
         display: none !important;
     }
@@ -81,7 +83,10 @@
 
 @media (max-width : 625px){
 
-
+    .btn-news{
+        display: flex;
+        justify-content: center;
+    }
     .box-news img{
         height: 110px;
         
@@ -165,6 +170,8 @@
 
 @media (max-width : 425px){
 
+ 
+
     .img-header{
         background-position-x: -300px;
         
@@ -179,11 +186,16 @@
 
 @media (max-width : 320px){
 
+    .search-parameters {
+        overflow-x: auto;
+    }
+
     .img-header{
         background-position-x: -600px;
         
     }
-
+    
+ 
     .line-list-services{
         /* display: none !important; */
     }
