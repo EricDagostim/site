@@ -83,10 +83,13 @@
 
 @media (max-width : 625px){
 
-    .btn-news{
+  
+
+    .btn-access{
         display: flex;
-        justify-content: center;
+        justify-content: center !important;
     }
+    
     .box-news img{
         height: 110px;
         
