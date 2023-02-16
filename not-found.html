@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="media-queries.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Prefeitura de Criciúma</title>
+    </head>
+<body onload="isLoad()">
+
+<!-- MODALS -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="adComunication" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <!-- <img src="..." class="rounded me-2" alt="..."> -->
+        <strong class="me-auto text-danger">Anúncio</strong>
+        <small>Arrecadação</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+      </div>
+      <a class="toast-body p-0" href="https://www.criciuma.sc.gov.br/site/">
+          <img src="img/Alvara_2023.jpeg" alt="Imagem anúncio" style="object-fit: cover; width: 100%; border-radius: 0px 0px 5px 5px;">
+      </a>
+    </div>
+</div>
+
+<div id="modalSearch" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Pesquise por palavras chaves.</h6>
+          
+          
+        </div>
+        <div class="modal-body ">
+            <div class="box-search-modal mb-2">
+                <input id="inputSearchModal" class="input-search" type="text" placeholder="O que procura ?"> 
+                <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+            </div>
+        <div style="display: flex; gap: 5px; align-items: center;">
+            <div class="text-color-details badge bg-color-details-op m-0">Serviços</div>
+            <div class="text-color-details badge bg-color-details-op rounded-pill m-0">4
+            </div>
+            <hr class="border bg-secondary opacity-25" style="width: 100%; height: 4px;">
+        </div>
+          
+          <div class="list-services-found">
+
+              <a class="service-found bg-color-secondary-op" href="#">
+                  <div class="info-service-found">      
+                      <div class="info-service-favorite" id="scroll1">
+                          <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                      </div>
+                  </div>  
+              </a>
+  
+              <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+  
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+          </div>
+
+          <div class="mt-2" style="display: flex; gap: 5px; align-items: center;">
+              <div class="text-primary badge bg-primary bg-opacity-25">Notícias</div>
+              <div class="text-primary badge bg-primary bg-opacity-25 rounded-pill">3</div>
+              <hr class="border bg-secondary opacity-25" style="width: 100%; height: 4px;">
+          </div>
+
+          <div class="list-services-found">
+
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            
+        </div>
+
+          <div class="list-found">
+
+          </div>
+        </div>
+        <div class="modal-footer" style="display: flex; justify-content: center;">
+          <button type="button" class="btn bg-secondary bg-opacity-25 text-dark" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+<!-- MODALS -->
+
+    
+    <div class="box-load">
+        <div class="loading"></div>
+        <p class="text-color-details mt-4">Carregando...</p>
+    </div>
+
+<main class="content">
+    <div class="container mt-5" style="padding: 50px 20px; border-radius: 50px; background-color: #b80a16e5;">
+        <div class="row text-center">
+            <h1 class="text-white p-0">Erro 404, página não encontrada!</h1>
+            <p class="text-white p-0">Parece que você se perdeu pelo caminho, talvez essa página não exista :(</p>
+            <p class="text-white p-0">Volte para o início da página.</p>
+            <a class="btn btn-light" href="index.html" style="width: fit-content; margin: 0 auto;">Início</a>
+        </div>
+    </div>
+
+    <p class="text-white" style="bottom: 10px; right: 10px; position: absolute; background-color: #747474; padding: 5px 10px; border-radius: 5px;"><i class="fas fa-map-pin"></i> Parque das Nações - Criciúma/SC.</p>
+</main>
+    
+    
+</body>
+</html>
+
+<style>
+    
+body{
+    background-image: url("img/background404.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-load{
+    background-color: #ffffff54;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99999;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(10px);
+}
+
+.bg-color-404{
+    background-color: #5b933a6b !important
+}
+
+.loading{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 4px dashed #5B933A;
+    animation: load 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.content{
+    display: none
+}
+
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    function isLoad(){   
+        $(".content").css({
+            'display' : 'block'
+        })
+
+        $(".box-load").css({
+            'display' : 'none'
+        })
+
+        
+        // setTimeout(() => {
+        //     const adComunicationCard = document.getElementById('adComunication')
+       
+        //     const toast = new bootstrap.Toast(adComunicationCard)
+        //     toast.show()
+        // }, 5500);
+    }
+    
+
+</script>
+
+
