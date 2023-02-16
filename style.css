@@ -217,8 +217,20 @@ input:focus{
     gap: 10px;
     justify-content: flex-start;
     width: 100%;
-    overflow-x: hidden;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+
+.box-scroll, .box-scroll-news{
+    overflow-x: auto;
+}
+
+.box-scroll::-webkit-scrollbar, .box-scroll-news::-webkit-scrollbar {
+    height: 5px;
+}
+  
+.box-scroll::-webkit-scrollbar-thumb, .box-scroll-news::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #93B233
 }
 
 .btn-pin-active{
@@ -669,9 +681,10 @@ input:focus{
 .scroll-news{
     display: flex;
     gap: 15px;
-
+    width: 100vw;
+    padding: 20px;
     overflow-y: hidden;
-    overflow-x: auto;
+    /* overflow-x: auto; */
 }
 
 .box-news {
@@ -696,6 +709,11 @@ input:focus{
     transition: 400ms;
     opacity: 100% !important;
     display: block !important;
+    user-select: none;
+    display: block !important;
+
+    margin-bottom: 0px;
+    
 }
 
 .box-news .tag-new{
@@ -706,9 +724,12 @@ input:focus{
 }
 
 .read-new{
+    
+    height: min-content;
     opacity: 0%;
-    margin-bottom: -30px;
     transition: 400ms;
+    user-select: none;
+    display: none !important;
 }
 
 .box-news img{

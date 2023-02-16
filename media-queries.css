@@ -1,9 +1,4 @@
 
-@media (max-width : 1250px){
-    .box-favorited{
-        justify-content: flex-start;
-    }
-}
 
 @media (max-width : 1140px){
     .img-header{
@@ -37,6 +32,7 @@
         max-width: 60%;
     }
 
+
     .img-header{
         background-position-x: -150px;
     }
@@ -45,9 +41,6 @@
         max-width: 100%;
     }
 
-    .box-favorited{
-       justify-content: flex-start;
-    }
 
     .button-search-services {
         width: 100%;      
@@ -67,11 +60,6 @@
         font-size: 1rem !important;
     }
 
-    .box-favorited {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-
     .navbar-mobile{
         display: block !important;
     }
@@ -89,7 +77,7 @@
         display: flex;
         justify-content: center !important;
     }
-    
+
     .box-news img{
         height: 110px;
         
