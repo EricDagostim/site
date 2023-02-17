@@ -13,20 +13,6 @@
 <body onload="isLoad()">
 
 <!-- MODALS -->
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="adComunication" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <!-- <img src="..." class="rounded me-2" alt="..."> -->
-        <strong class="me-auto text-danger">Anúncio</strong>
-        <small>Arrecadação</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
-      </div>
-      <a class="toast-body p-0" href="https://www.criciuma.sc.gov.br/site/">
-          <img src="img/Alvara_2023.jpeg" alt="Imagem anúncio" style="object-fit: cover; width: 100%; border-radius: 0px 0px 5px 5px;">
-      </a>
-    </div>
-</div>
-
 <div id="modalSearch" class="modal" tabindex="-1">
     <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-scrollable">
       <div class="modal-content">
@@ -132,26 +118,50 @@
 
 <!-- MODALS -->
 
-    
-    <div class="box-load">
-        <div class="loading"></div>
-        <p class="text-color-details mt-4">Carregando...</p>
-    </div>
+<div class="box-load">
+    <div class="loading"></div>
+    <p class="text-color-details mt-4">Carregando...</p>
+</div>
 
 <main class="content">
     
     <nav id="navbar" class="navbar-desktop navbar-float">
-        <ul id="navlinks" class="list-links-nav">
-            <img src="img/logo-criciuma-branca.png" alt="Logo governo de Criciúma" style="width: 45px;">
-            <li><a class="link-nav-redirect" href="#">Início</a></li>
-            <li><a class="link-nav-redirect" href="#">Editais</a></li>
-            <li><a class="link-nav-redirect" href="#">Serviços</a></li>
-            <li><a class="link-nav-redirect" href="#">Notícias</a></li>
-            <li><a class="link-nav-redirect" href="#">Ouvidoria</a></li>
-            <li><a class="link-nav-redirect" href="#">Contato</a></li>
+        <div class="container">
+
+            <div class="col-12 box-nav-links">
+    
+                <div class="teste mt-3">
+                    <div class="nav-header">
+                        <img src="img/logo-criciuma-branca.png" alt="Logo governo de Criciúma">    
+                        <h1>Transparente, <br> <span>como deve ser!</span></h1>
+                    </div>
+                        <!-- <button class="btn btn-light button-search" data-bs-toggle="modal" data-bs-target="#modalSearch" onclick="focus()">
+                        Pesquisar dentro do site
+                        <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+                    </button> -->
+                </div>
+                
+                <ul id="navlinks" class="list-links-nav">
+                    <li><a class="link-nav-redirect" href="#">Início</a></li>
+                    <li><a class="link-nav-redirect" href="#">Editais</a></li>
+                    <li><a class="link-nav-redirect" href="#">Serviços</a></li>
+                    <li><a class="link-nav-redirect" href="#">Notícias</a></li>
+                    <li><a class="link-nav-redirect" href="#">Ouvidoria</a></li>
+                    <li><a class="link-nav-redirect" href="#">Contato</a></li>
+                    <li><a class="link-nav-acessibilidade" href="#"><i class="fa-solid fa-universal-access"></i> Acessibilidade</a></li>
+                </ul>
+                <div class="medias">
+                    <a href="#" class="icon-insta"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="icon-twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+            </div>
             
-            <li><a class="link-nav-acessibilidade" href="#"><i class="fa-solid fa-universal-access"></i> Acessibilidade</a></li>
-        </ul>
+        </div>
+        
+        
+
     </nav>
 
     <nav class="navbar fixed-top navbar-mobile p-0" style="background-color: #5B933A;">
@@ -196,24 +206,77 @@
         </div>
       </nav>
 
-    <div class="container-fluid container-header"> 
-        <div class="row img-header">
-            <div class="col-12 overlay-header"></div>
-                <div class="content-header">
-                    <div class="align-content-search mt-4">
-                        <h5 class="text-white">Como podemos ajudar?</h5>
+    <!-- <div class="container-fluid"> 
+        <div class="row">
+            
 
                         
-                        <button class="button-search" data-bs-toggle="modal" data-bs-target="#modalSearch" onclick="focus()">
+                         <button class="button-search" data-bs-toggle="modal" data-bs-target="#modalSearch" onclick="focus()">
                                 Pesquisar dentro do site
                                 <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
-                        </button>
-                    </div>
-                </div>          
+                        </button> 
+                    
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <div class="">
+                    <h4 class="text-color-primary text-center-625">Anúncios em stories</h4>
+                    <p class="text-services text-center-625">Anúncios importantes de uma forma mais divertida.</p>
+                </div>
+                <div class="box-stories box-scroll" style="padding-bottom: 10px">
+                    
+                    <a href="#" class="ad-story">
+                        <div>
+                            <img src="img/IPTU_2023.jpeg" loading="lazy">
+                        </div>
+                   
+                    </a>
+    
+                    <a href="#" class="ad-story">
+                        <div>
+                            <img src="img/Alvara_2023.jpeg" loading="lazy">
+                        </div>
+                       
+                    </a>
+    
+                    <a href="#" class="ad-story">
+                        <div>
+                            <img src="img/imagem-noticia.jpeg" loading="lazy">
+                        </div>
+                        
+                    </a>
+
+                    <a href="#" class="ad-story">
+                        <div>
+                            <img src="img/IMG-HEADER.jpg" loading="lazy">
+                        </div>
+                   
+                    </a>
+    
+                    <a href="#" class="ad-story">
+                        <div>
+                            <img src="img/news-fundo.jpeg" loading="lazy">
+                        </div>
+                       
+                    </a>
+    
+                    <a href="#" class="ad-story">
+                        <div>
+                            <img src="img/background404.jpg" loading="lazy">
+                        </div>
+                        
+                    </a>
+
+                    
+                    
+                </div>
             </div>
         </div>
     </div>
-
+    
     <div class="container">
         <div class="row">
             <div class="col-12 mt-4">
@@ -429,7 +492,7 @@
 
 
                     <div class="row mt-3">
-                        <div class="col-12 scroll-news box-scroll-news">
+                        <div class="col-12 scroll-news box-scroll">
                                
                                 <a href="#" class="box-news">
                                     <img src="img/news-fundo.jpeg" alt="Imagem Notícia">
@@ -441,7 +504,7 @@
             
                                         <h5 class="pb-0">Na esfera penal, esse tipo de crime prevê pena de reclusão de dois a cinco anos ao responsável, além de multa e proibição da guarda do animal</h5>
                                         
-                                        <div class="read-new badge text-color-secondary bg-color-details-op mt-3">Ver mais</div>
+                                        
                                     </div>
                                 </a>
                                 
@@ -453,7 +516,7 @@
                                         <p>Postagem 30/01/2023</p>
             
                                         <h5 class="pb-0">A Prefeitura de Criciúma realizará a concessão do restaurante localizado no Parque das Nações Cincinato Naspolini. O objetivo é permitir a exploração comercial do equipamento público e melhorar o serviço para os frequentadores do parque. As propostas serão aceitas até o dia 14 de março.</h5>
-                                        <div class="read-new badge text-color-secondary bg-color-details-op mt-3">Ver mais</div>
+                                        
                                     </div>
                                 </a>
 
@@ -466,7 +529,7 @@
                                         <p>Postagem 30/01/2023</p>
             
                                         <h5 class="pb-0">Na esfera penal, esse tipo de crime prevê pena de reclusão de dois a cinco anos ao responsável, além de multa e proibição da guarda do animal</h5>
-                                        <div class="read-new badge text-color-secondary bg-color-details-op mt-3">Ver mais</div>
+                                        
                                     </div>
                                 </a>
                         </div>
@@ -527,21 +590,13 @@
 
 </style>
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
 <script>
-
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
     
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
     function isLoad(){   
         $(".content").css({
             'display' : 'block'
@@ -550,18 +605,6 @@
         $(".box-load").css({
             'display' : 'none'
         })
-
-        
-        setTimeout(() => {
-            const adComunicationCard = document.getElementById('adComunication')
-       
-            const toast = new bootstrap.Toast(adComunicationCard)
-            toast.show()
-        }, 5500);
-    }
-    
-    function focus(){
-        document.getElementById("inputSearchModal").focus();
     }
 
 </script>
