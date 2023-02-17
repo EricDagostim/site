@@ -481,14 +481,12 @@ input:focus{
     color: #304126;
     font-size: 1.5rem;
     text-decoration: none;
-    width: 44px;
-    height: 44px;
-
+    width: 45px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
 }
 
 .medias a:hover{
@@ -537,22 +535,11 @@ input:focus{
 }
 
 .nav-header h1 span{
-    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Pacifico', cursive;
     background-image: none;
-    
     font-weight: 400;
     color: #304126;
-
-
 }
-
-
-.button-search{
-    
-}
-
-
 
 /* navbar mobile */
 
@@ -657,34 +644,19 @@ input:focus{
     
 }
 
-
-
-
-
-
-
-/* NavBar */
-
 /* alertas no conteúdo */
 
 .content-alert{
     background-color: #92b2334b;
     padding: 10px;
     border-radius: 5px;
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     width: auto;
 }
-
-/* 
-*****************************************
-*/
 
 .box-search-modal{
     border: 1px solid #acacac;
@@ -708,7 +680,6 @@ input:focus{
     width: 100vw;
     padding: 20px;
     overflow-y: hidden;
-    /* overflow-x: auto; */
 }
 
 .box-news {
@@ -767,8 +738,6 @@ input:focus{
     font-weight: 400;
     padding: 10px 0px;
     margin: 0;
-
-
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -796,14 +765,10 @@ input:focus{
 
 /* notícias */
 
-
-
-
 .box-stories{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    
+    gap: 10px;    
 }
 
 .ad-story{
@@ -821,3 +786,4 @@ input:focus{
     padding: 2px;
     border: 3px solid #5B933A;
 }
+

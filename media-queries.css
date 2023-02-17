@@ -46,6 +46,16 @@
 
 @media (max-width : 772px){
 
+    .list-links-nav{
+        width: 100% !important;
+        border-radius: 0% !important;
+        
+    }
+
+    .box-nav-links{
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
    
 
     .content-news h5{
@@ -68,7 +78,7 @@
 
 @media (max-width : 625px){
 
-  
+ 
 
     .btn-access{
         display: flex;
