@@ -717,7 +717,6 @@ input:focus{
     width: 100%;
 }
 
-
 /* notícias */
 
 .scroll-news{
@@ -742,7 +741,7 @@ input:focus{
 }
 
 .box-news:hover img{
-    height: 160px;
+    height: 150px;
     transition: 400ms;
 }
 
@@ -833,3 +832,15 @@ input:focus{
     border: 3px solid #5B933A;
 }
 
+
+.box-img{
+    width: 50%;
+    height: 250px;
+}
+
+.box-img img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
