@@ -78,7 +78,13 @@
 
 @media (max-width : 625px){
 
- 
+    .align-search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
 
     .btn-access{
         display: flex;
@@ -108,12 +114,7 @@
         width: 100%;
       }
 
-    .content-main-services{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-    }
+    
 
     .button-search img{
         width: 20px;
@@ -156,15 +157,21 @@
 
 }
 
-@media (max-width : 425px){
+@media (max-width : 345px){
 
-
-
-
+    .nav-header {
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        gap: 15px;
+        flex-direction: column;
+    }
 
 }
 
 @media (max-width : 320px){
+
+    
 
     .search-parameters {
         overflow-x: auto;
