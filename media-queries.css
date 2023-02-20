@@ -58,11 +58,6 @@
     }
    
 
-    .content-news h5{
-        display: none !important;
-    }
-
-
     .content-news h1{
         font-size: 1rem !important;
     }
@@ -90,17 +85,7 @@
         display: flex;
         justify-content: center !important;
     }
-
-    .box-news img{
-        height: 110px;
-        
-    }
-
-    .box-news:hover img{
-        height: 80px;
-        transition: 400ms;
-    }
-
+    
     .placeholder-text{
         display: flex;
         flex-direction: column;
