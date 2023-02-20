@@ -821,9 +821,10 @@ input:focus{
     width: 100px;
     height: 100px;
     object-fit: cover;
-    padding: 2px;
-    border: 2px solid #93B233;
-    /* border: 3px solid #0044064d; */
+    padding: 3px;
+    /* border: 2px solid #93B233; */
+    border: 2px solid #ffffff70;
+    image-resolution: 300dpi;
     
 }
 
