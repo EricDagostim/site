@@ -124,15 +124,19 @@ input:focus{
 .content-main-services{
     display: flex;
     flex-direction: column;
+}
+
+.content-title-services{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 
 .service-favorite{
     display: flex;
-    background-color: #5b933a2c;
-
+    background-color: #5b933a1c;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none !important;
@@ -143,9 +147,7 @@ input:focus{
 }
 
 .service-favorite:hover{
-    /* color: #304126; */
-    background-color: #92b23363 !important;
-    
+    background-color: #5b933a2f !important;
 }
 
 .info-service-favorite{
@@ -417,7 +419,7 @@ input:focus{
     padding: 10px;
     border-radius: 5px;
     /* background-color: #c9d8991e; */
-    background-color: #5b933a2c;
+    background-color: #5b933a1c;
     text-decoration: none;
 
     transition: 200ms;
@@ -425,10 +427,13 @@ input:focus{
 
 .service:hover{
     transition: 200ms;
-    color: #dadada !important;
-    background-color: #92b23363 !important;
-    padding-top: 5px;
-    box-shadow:  5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff;
+    background-color: #5b933a2f !important;
+    /* padding-top: 5px; */
+    /* box-shadow:  5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff; */
+}
+
+.service:hover .info-service, .service:hover .link-service{
+    /* color: #5B933A !important; */
 }
 
 
@@ -491,10 +496,10 @@ input:focus{
     list-style: none;
     display: flex;
     text-decoration: none;
-    gap: 25px;
+    gap: 15px ;
     padding: 10px 25px;
     width: fit-content;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 5px;
     margin: 0;   
