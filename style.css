@@ -855,3 +855,13 @@ input:focus{
     object-fit: cover;
     border: 1px solid #acacac62;
 }
+
+
+
+
+.ad-new img{    
+    width: 350px;
+    object-fit: cover;   
+    border-radius: 5px;
+    padding: 0;
+}
