@@ -433,11 +433,6 @@ input:focus{
     /* box-shadow:  5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff; */
 }
 
-.service:hover .info-service, .service:hover .link-service{
-    /* color: #5B933A !important; */
-}
-
-
 .info-service{
     display: flex;
     align-items: center;
@@ -845,9 +840,6 @@ input:focus{
     object-fit: cover;
     padding: 3px;
     border: 2px solid #93B233;
-    /* border: 2px solid #ffffff70; */
-    image-resolution: 300dpi;
-    
 }
 
 
