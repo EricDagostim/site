@@ -569,17 +569,15 @@ input:focus{
 
 
 .navbar-desktop{
-    /* background: linear-gradient(9deg, rgba(91,147,58,1) 21%, rgba(147,178,51,1) 100%); */
     background: #5b933a80;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
     height: 281px;
-    background: linear-gradient(9deg, #92b233a1 1%, #5b933aa4 100%);
-    
+    background: linear-gradient(9deg, #92b233a1 1%, #5b933aa4 100%);    
 }
 
 .navbar-mobile{
     background: #5b933a80;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
     background: linear-gradient(9deg, #93b23380 1%, #5b933a80 100%);
 }
 
@@ -837,26 +835,3 @@ input:focus{
 }
 
 /* notícias */
-
-
-.content-ad{
-    
-    
-}
-
-.box-ad{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    gap: 10px;
-}
-
-.box-ad img{
-    
-    object-fit:contain;
-    height: 200px;
-    max-width: 650px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    /* border: 1px solid #93B233; */
-}
