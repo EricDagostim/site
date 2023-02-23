@@ -59,6 +59,25 @@
     background-color: #4b4b4b17 !important;
 }
 
+.bg-color-gradient-op{
+    background: #5b933a80;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(9deg, #93b23380 1%, #5b933a80 100%);
+}
+
+.bg-color-gradient{
+    background: #5b933a;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(9deg, #92b233 1%, #5b933a 100%);
+}
+
+.bg-shadow-in{
+
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #a197971f 60%, rgba(255,255,255,1) 100%);
+
+}
+
 /* Cores background */
 
 input{
@@ -828,7 +847,7 @@ input:focus{
 .box-ad{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 10px;
 }
 
@@ -839,4 +858,5 @@ input:focus{
     max-width: 650px;
     border-radius: 5px;
     margin-bottom: 10px;
+    /* border: 1px solid #93B233; */
 }
