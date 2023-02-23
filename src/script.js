@@ -1,5 +1,6 @@
-function focus(){
-    document.getElementById("inputSearchModal").focus();
+function focusInSearch(){
+  document.getElementById("inputSearchModal").focus();
+  console.log("sim")
 }
 
 function enableHorizontalScroll() {
@@ -43,7 +44,4 @@ function enableHorizontalScroll() {
 }
 
 
-
 enableHorizontalScroll();
-
-

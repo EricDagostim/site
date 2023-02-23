@@ -197,7 +197,7 @@
                         
                 </div>
                 
-                <ul id="navlinks" class="list-links-nav">
+                <ul id="navlinks" class="list-links-nav" style="position: sticky; top: 10px;">
                     <li><a class="link-nav-redirect" href="#">Início</a></li>
                     <li><a class="link-nav-redirect" href="#">Editais</a></li>
                     <li><a class="link-nav-redirect" href="#">Serviços</a></li>
@@ -210,10 +210,13 @@
                     <a href="#" class="icon-insta"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="icon-facebook"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="icon-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon-youtube"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </nav>
+
+    
 
     <nav class="navbar navbar-mobile p-0" >
         <div class="container-fluid">
@@ -240,6 +243,7 @@
                     <a href="#" class="icon-insta"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="icon-facebook"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="icon-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon-youtube"><i class="fa-brands fa-youtube"></i></a>
                 </div>
                 
             </div>
@@ -287,14 +291,12 @@
                         <div class="content-search-site">
                             <h4 class="text-color-primary text-center">Do que você precisa hoje?</h4>
                             <p class="" style="text-align: center;">Faça uma busca por todo o site oficial da prefeitura de Criciúma</p>
-                            <button class="btn button-search" data-bs-toggle="modal" data-bs-target="#modalSearch" onclick="focus()">
+                            <button class="btn button-search" data-bs-toggle="modal" data-bs-target="#modalSearch" onclick="focusInSearch();">
                                 Pesquisar dentro do site
                                 <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
                             </button> 
                         </div>
-                        
-
-                        
+                                                
                         <div class="box-scroll box-favorited mt-1" style="padding: 10px; padding-left: 0; padding-top: 0;">    
                             
                         
@@ -478,6 +480,25 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="container-fluid bg-color-details-op p-5">
+                    <div class="container">
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <h4 class="text-color-primary text-center">Do que você precisa hoje?</h4>
+                                    <p style="text-align: center;">Faça uma busca por todo o site oficial da prefeitura de Criciúma
+                                    </p>
+                            </div>
+        
+                            <div class="col-12 content-ad box-scroll">
+                                <div class="box-ad">
+                                    <a href="#"><img src="img/IPTU_2023.jpeg" alt="Imagem anúncio"></a>
+                                    <a href="#"><img src="img/Alvara_2023.jpeg" alt="Imagem anúncio"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
               
                 <div class="col-12 col-lg-6 mt-lg-5 mt-5">
@@ -587,9 +608,9 @@
         })
     }
 
-    $(document).ready(function(){
-        $("#modalSearch").modal("show");
-    })
+    // $(document).ready(function(){
+    //     $("#modalSearch").modal("show");
+    // })
     // aparecer modal agui
 
 

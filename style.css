@@ -512,8 +512,8 @@ input:focus{
     color: #304126;
     font-size: 1.5rem;
     text-decoration: none;
-    width: 44px;
-    height: 44px;
+    width: 45px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -538,6 +538,16 @@ input:focus{
     transition: 200ms;
     color: #1DA1F2;
 }
+
+.icon-youtube:hover{
+    transition: 200ms;
+    color: #c4302b;
+}
+
+.icon-insta, .icon-facebook, .icon-twitter, .icon-youtube{
+    transition: 200ms;
+}
+
 
 .navbar-desktop{
     /* background: linear-gradient(9deg, rgba(91,147,58,1) 21%, rgba(147,178,51,1) 100%); */
@@ -809,22 +819,24 @@ input:focus{
 
 /* notícias */
 
-.box-img{
-    width: 20%;
-    height: 250px;
+
+.content-ad{
+    
+    
 }
 
-.box-img img {
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 1px solid #acacac62;
+.box-ad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
-.ad-new img{    
-    width: 350px;
-    object-fit: cover;   
+.box-ad img{
+    
+    object-fit:contain;
+    height: 200px;
+    max-width: 650px;
     border-radius: 5px;
-    padding: 0;
+    margin-bottom: 10px;
 }
