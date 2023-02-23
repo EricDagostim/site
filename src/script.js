@@ -4,8 +4,7 @@ function focus(){
 
 function enableHorizontalScroll() {
   var containers = document.querySelectorAll('.box-scroll');
-    // var container = document.getElementsByClassName('.box-scroll');
-   
+  
     for (let i = 0; i < containers.length; i++) {
       let container = containers[i];
     
@@ -28,11 +27,6 @@ function enableHorizontalScroll() {
       });
     
       container.addEventListener('mouseup', function() {
-        // isDown = false;
-        // container.style.cursor = 'grab';
-        // // container.style.cursor = 'pointer';
-        // container.style.userSelect = 'auto';
-
         isDown = false;
         container.style.cursor = 'grab';
         container.style.userSelect = 'auto';
@@ -45,10 +39,7 @@ function enableHorizontalScroll() {
         var walk = (x - startX) * 1.5; // velocidade de rolagem
         container.scrollLeft = scrollLeft - walk;
       });
-
-
     }
-  
 }
 
 

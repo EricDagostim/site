@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
-    /* font-family: 'Raleway', sans-serif; */
-    /* font-family: 'Inter', sans-serif; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -36,8 +34,6 @@
     text-decoration: underline;
 }
 
-
-
 .text-link-details:hover{
     color: #8cca68 !important;
 }
@@ -63,16 +59,7 @@
     background-color: #4b4b4b17 !important;
 }
 
-
-
-
-
-
-
 /* Cores background */
-
-
-
 
 input{
     outline: none;
@@ -157,8 +144,12 @@ input:focus{
     margin: 2px 0px;
     padding: 5px 2px;
     border-radius: 5px;
-    word-break: normal;
-    word-wrap: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .info-service-favorite i{
@@ -170,7 +161,7 @@ input:focus{
 .list-services-found{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 1px;
 }
 
 .service-found{
@@ -189,13 +180,11 @@ input:focus{
 }
 
 .service-found:hover{
-    margin-left: -5px;
     opacity: 75%;
     transition: 200ms;
 }
 
 .info-service-found{
-    /* color: #5B933A; */
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -553,15 +542,15 @@ input:focus{
 .navbar-desktop{
     /* background: linear-gradient(9deg, rgba(91,147,58,1) 21%, rgba(147,178,51,1) 100%); */
     background: #5b933a80;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     height: 281px;
-    background: linear-gradient(9deg, #93b23380 1%, #5b933a80 100%);
+    background: linear-gradient(9deg, #92b233a1 1%, #5b933aa4 100%);
     
 }
 
 .navbar-mobile{
     background: #5b933a80;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     background: linear-gradient(9deg, #93b23380 1%, #5b933a80 100%);
 }
 
@@ -832,9 +821,6 @@ input:focus{
     object-fit: cover;
     border: 1px solid #acacac62;
 }
-
-
-
 
 .ad-new img{    
     width: 350px;
