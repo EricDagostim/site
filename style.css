@@ -7,10 +7,72 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* root de cores */
+
+:root {
+	--pallete-color-primary: #5B933A;
+	--pallete-color-primary-rgb: 91,147,58;
+	--pallete-color-primary-contrast: #ffffff;
+	--pallete-color-primary-contrast-rgb: 255,255,255;
+	--pallete-color-primary-shade: #508133;
+	--pallete-color-primary-tint: #6b9e4e;
+
+	--pallete-color-secondary: #304126;
+	--pallete-color-secondary-rgb: 48,65,38;
+	--pallete-color-secondary-contrast: #ffffff;
+	--pallete-color-secondary-contrast-rgb: 255,255,255;
+	--pallete-color-secondary-shade: #2a3921;
+	--pallete-color-secondary-tint: #45543c;
+
+	--pallete-color-tertiary: #93B233;
+	--pallete-color-tertiary-rgb: 147,178,51;
+	--pallete-color-tertiary-contrast: #000000;
+	--pallete-color-tertiary-contrast-rgb: 0,0,0;
+	--pallete-color-tertiary-shade: #819d2d;
+	--pallete-color-tertiary-tint: #9eba47;
+
+	--pallete-color-success: #5D943A;
+	--pallete-color-success-rgb: 93,148,58;
+	--pallete-color-success-contrast: #ffffff;
+	--pallete-color-success-contrast-rgb: 255,255,255;
+	--pallete-color-success-shade: #528233;
+	--pallete-color-success-tint: #6d9f4e;
+
+	--pallete-color-warning: #b8b20a;
+	--pallete-color-warning-rgb: 184,178,10;
+	--pallete-color-warning-contrast: #000000;
+	--pallete-color-warning-contrast-rgb: 0,0,0;
+	--pallete-color-warning-shade: #a29d09;
+	--pallete-color-warning-tint: #bfba23;
+
+	--pallete-color-danger: #B80A15;
+	--pallete-color-danger-rgb: 184,10,21;
+	--pallete-color-danger-contrast: #ffffff;
+	--pallete-color-danger-contrast-rgb: 255,255,255;
+	--pallete-color-danger-shade: #a20912;
+	--pallete-color-danger-tint: #bf232c;
+
+	--pallete-color-medium: #92949c;
+	--pallete-color-medium-rgb: 146,148,156;
+	--pallete-color-medium-contrast: #000000;
+	--pallete-color-medium-contrast-rgb: 0,0,0;
+	--pallete-color-medium-shade: #808289;
+	--pallete-color-medium-tint: #9d9fa6;
+
+	--pallete-color-light: #f4f5f8;
+	--pallete-color-light-rgb: 244,245,248;
+	--pallete-color-light-contrast: #000000;
+	--pallete-color-light-contrast-rgb: 0,0,0;
+	--pallete-color-light-shade: #d7d8da;
+	--pallete-color-light-tint: #f5f6f9;
+
+}
+
+
 /* Cores Texto */
 
 .text-color-primary{
-    color: #304126 !important
+    color: var(--pallete-color-secondary) !important
 }
 
 .text-color-secondary{
@@ -18,7 +80,7 @@
 }
 
 .text-color-details{
-    color: #5B933A !important
+    color: var(--pallete-color-primary) !important
 }
 
 .text-color-white{
@@ -30,7 +92,7 @@
 }
 
 .text-link-details{
-    color: #5B933A !important;
+    color: var(--pallete-color-primary) !important;
     text-decoration: underline;
 }
 
@@ -44,11 +106,11 @@
 /* Cores background */
 
 .bg-color-primary{
-    background-color: #304126 !important
+    background-color: var(--pallete-color-secondary) !important
 }
 
 .bg-color-details{
-    background-color: #5B933A !important
+    background-color: var(--pallete-color-primary) !important
 }
 
 .bg-color-details-op{
@@ -66,16 +128,9 @@
 }
 
 .bg-color-gradient{
-    background: #5b933a;
+    background: var(--pallete-color-primary);
     backdrop-filter: blur(5px);
-    background: linear-gradient(9deg, #92b233 1%, #5b933a 100%);
-}
-
-.bg-shadow-in{
-
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #a197971f 60%, rgba(255,255,255,1) 100%);
-
+    background: linear-gradient(9deg, #92b233 1%, var(--pallete-color-primary) 100%);
 }
 
 /* Cores background */
@@ -120,7 +175,7 @@ input:focus{
 
 .content-search-site .button-search:hover{
     background-color: #5b933a2c;
-    color: #5B933A;
+    color: var(--pallete-color-primary)
 }
 
 .content-search-site .button-search:focus{
@@ -172,7 +227,7 @@ input:focus{
 }
 
 .info-service-favorite i{
-    color: #5B933A;
+    color: var(--pallete-color-primary)
 }
 
 /* service found */
@@ -465,7 +520,8 @@ input:focus{
 }
 
 .link-service i{
-    color: #5B933A;font-size: 1.5rem;
+    color: var(--pallete-color-primary);
+    font-size: 1.5rem;
 }
 
 .link-service h6{
@@ -673,7 +729,7 @@ input:focus{
 }
 
 .nav-link i{
-    color: #5B933A;
+    color: var(--pallete-color-primary);
     border-radius: 5px;
 }
 
@@ -713,7 +769,7 @@ input:focus{
 }
 
 .offcanvas-header{
-    background-color: #5B933A;
+    background-color: var(--pallete-color-primary);
     color: #fff;
 }
 
@@ -769,6 +825,7 @@ input:focus{
 .box-news {
     border-radius: 5px;
     border: 1px solid #cdcdcd;
+    background-color: #5b933a1c;
     min-width: 350px ;
     width: 100%;
     max-height: 270px;
@@ -825,7 +882,7 @@ input:focus{
 
 .content-all-news h1{
     font-size: 1rem;
-    color: #5B933A;
+    color: var(--pallete-color-primary)
 
 }
 

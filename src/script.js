@@ -1,6 +1,5 @@
 function focusInSearch(){
   document.getElementById("inputSearchModal").focus();
-  console.log("sim")
 }
 
 function enableHorizontalScroll() {
