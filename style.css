@@ -257,11 +257,16 @@ input:focus{
     transition: 200ms;
 }
 
-.service-found:focus, .service-found:focus-visible, .service-found:focus-within{
+.service-found:focus, .service-found:focus-within{
     opacity: 75%;
     border: none !important;
     box-shadow: none !important;
-    
+    outline-offset: 0px !important;
+}
+
+.service-found:focus-visible{
+    box-shadow: none !important;
+    outline-offset: 0px !important;
 }
 
 
@@ -899,3 +904,104 @@ input:focus{
 }
 
 /* notícias */
+
+
+/* Específico de "servico.html" */
+.header-servico{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 65%;
+    
+}
+
+/* .text-map{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+} */
+
+
+.text-map ul li{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+
+    
+}
+
+.text-map ul{
+    padding: 0;
+    margin: 0;
+}
+
+.text-map ul li a{
+    text-decoration: none;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffffff1f;
+    word-break: break-all;
+
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:block-axis;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    
+    
+}
+
+.text-map ul li a:hover{
+    text-decoration: none;
+    color: #e2f5aa;
+    background-color: #ffffff38;
+}
+
+.box-map-text{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+
+    
+}
+
+.map-header h4{
+    font-size: 1.2rem;
+}
+
+.float-map{
+    width: 250px;
+    position: sticky;
+    top: 10px !important;
+    margin-bottom: -220px;
+}
+
+
+.text-content img{
+    margin-bottom: 30px;
+    
+}
+
+.footer-service{
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+/* Específico de "servico.html" */

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="media-queries.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Prefeitura de Criciúma</title>
+    </head>
+<body onload="isLoad()">
+
+<!-- MODALS -->
+
+<div id="modalSearch" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Pesquise por palavras chaves.</h6>
+          
+          
+        </div>
+        <div class="modal-body ">
+            <div class="box-search-modal mb-2">
+                <input id="inputSearchModal" class="input-search" type="text" placeholder="O que procura ?"> 
+                <img src="img\glass-search.svg" alt="SVG lupa de pesquisa">
+            </div>
+        <div style="display: flex; gap: 5px; align-items: center;">
+            <div class="text-color-details badge bg-color-details-op m-0">Serviços</div>
+            <div class="text-color-details badge bg-color-details-op rounded-pill m-0">4
+            </div>
+            <hr class="border bg-secondary opacity-25" style="width: 100%; height: 4px;">
+        </div>
+          
+          <div class="list-services-found">
+
+              <a class="service-found bg-color-secondary-op" href="#">
+                  <div class="info-service-found">      
+                      <div class="info-service-favorite" id="scroll1">
+                          <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                      </div>
+                  </div>  
+              </a>
+  
+              <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+  
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+          </div>
+
+          <div class="mt-2" style="display: flex; gap: 5px; align-items: center;">
+              <div class="text-primary badge bg-primary bg-opacity-25">Notícias</div>
+              <div class="text-primary badge bg-primary bg-opacity-25 rounded-pill">3</div>
+              <hr class="border bg-secondary opacity-25" style="width: 100%; height: 4px;">
+          </div>
+
+          <div class="list-services-found">
+
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            <a class="service-found bg-color-secondary-op" href="#">
+                <div class="info-service-found">      
+                    <div class="info-service-favorite" id="scroll1">
+                        <h6 class="m-0 text-color-secondary"><i class="fa-solid fa-book text-color-secondary"></i>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit</h6>
+                    </div>
+                </div>  
+            </a>
+
+            
+        </div>
+
+          <div class="list-found">
+
+          </div>
+        </div>
+        <div class="modal-footer" style="display: flex; justify-content: center;">
+          <button type="button" class="btn bg-secondary bg-opacity-25 text-dark" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+<!-- MODALS -->
+
+    
+<div class="box-load">
+    <img src="img/logo-preta.png" alt="Logo governo de Criciúma" style="width: 120px;"> 
+</div>
+
+<main class="content">
+    <div class="header-servico" style="background-image: url('img/imagem-noticia.jpeg');"></div>
+    
+
+   
+            <div class="float-map">               
+                <div class="box-map-text bg-color-details mt-2" style="border-radius: 5px;">
+                    <div class="map-header" >
+                        <h4 class="m-0 text-center text-color-white" ><i class="fa-solid fa-align-left"></i> Tópicos do texto</h4>
+                    </div>
+                    <div class="text-map p-1">
+                        <ul>
+                            <li><a href="#t1" title="Para quem é este serviço?">Para quem é este serviço?</a></li>
+                            <li><a href="#t2" title="Como funciona a execução do serviço">Como funciona a execução do serviço</a></li>
+                            <li><a href="#t3" title="O serviço possui taxas?">O serviço possui taxas?</a></li>
+                            <li><a href="#t4" title="Processo completo">Processo completo</a></li>
+                            <li><a href="#t5" title="Documentos necessários">Documentos necessários</a></li>
+                        </ul>    
+                    </div>
+                </div>               
+            </div>    
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-12 col-lg-8">
+                    <div class="row text-content">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                              <li class="breadcrumb-item"><a href="not-found.html">Serviços</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Processo Seletivo nas áreas de Infraestrutura, Social e Educação</li>
+                            </ol>
+                          </nav>
+                        <h1 class="text-color-primary" style="font-size: 2rem;">Processo Seletivo nas áreas de Infraestrutura, Social e Educação</h1>
+    
+                        <p class="text-color-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut necessitatibus officia veritatis assumenda consectetur. Blanditiis repellat fuga dignissimos minus corporis at eligendi, nam, perspiciatis veritatis aliquam velit! Doloribus, blanditiis rerum!
+                        </p>
+    
+                        <h2 id="t1" class="text-color-details" style="font-size: 1.5rem;">Para quem é este serviço?</h2>
+                        <p class="text-color-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut necessitatibus officia veritatis assumenda consectetur. Blanditiis repellat fuga dignissimos minus corporis at eligendi, nam, perspiciatis veritatis aliquam velit! Doloribus, blanditiis rerum!
+
+                            <br><br>
+
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, et at! Ex, iure aspernatur atque inventore et adipisci alias totam, vel impedit tempore placeat soluta officia cum, possimus accusantium quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nesciunt vel aliquam atque amet, esse quidem autem, non consequatur iure qui ea beatae, assumenda id quod rerum doloremque asperiores voluptatum.
+                        </p>
+                        <img src="img/news-fundo.jpeg" alt="imagem texto">
+                        
+                        <h2 id="t2" class="text-color-details" style="font-size: 1.5rem;">Como funciona a execução do serviço</h2>
+                        <p class="text-color-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut necessitatibus officia veritatis assumenda consectetur. Blanditiis repellat fuga dignissimos minus corporis at eligendi, nam, perspiciatis veritatis aliquam velit! Doloribus, blanditiis rerum!
+
+                            <br><br>
+
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, et at! Ex, iure aspernatur atque inventore et adipisci alias totam, vel impedit tempore placeat soluta officia cum, possimus accusantium quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nesciunt vel aliquam atque amet, esse quidem autem, non consequatur iure qui ea beatae, assumenda id quod rerum doloremque asperiores voluptatum.
+
+                            <br><br>
+
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, et at! Ex, iure aspernatur atque inventore et adipisci alias totam, vel impedit tempore placeat soluta officia cum, possimus accusantium quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nesciunt vel aliquam atque amet, esse quidem autem, non consequatur iure qui ea beatae, assumenda id quod rerum doloremque asperiores voluptatum. dolor sit amet consectetur adipisicing elit. Repudiandae nesciunt vel aliquam atque amet, esse quidem autem, non consequatur iure qui ea beatae, assumenda id quod rerum doloremque asperiores voluptatum.
+                        </p>
+
+                       
+                        <h2 id="t3" class="text-color-details" style="font-size: 1.5rem;">O serviço possui taxas?</h2>
+                        <p class="text-color-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut necessitatibus officia veritatis assumenda consectetur. Blanditiis repellat fuga dignissimos minus corporis at eligendi, nam, perspiciatis veritatis aliquam velit! Doloribus, blanditiis rerum!
+                        </p>
+
+                        <p class="text-color-primary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat, consectetur quis expedita maxime similique vitae alias, debitis officiis porro at quod impedit quibusdam laboriosam obcaecati sunt quae cupiditate quaerat.
+                        </p>
+                        
+                        <h2 id="t4" class="text-color-details" style="font-size: 1.5rem;">Processo completo</h2>
+                        <p class="text-color-primary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut necessitatibus officia veritatis assumenda consectetur. Blanditiis repellat fuga dignissimos minus corporis at eligendi, nam, perspiciatis veritatis aliquam velit! Doloribus, blanditiis rerum!
+                        </p>
+
+                        <p class="text-color-primary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat, consectetur quis expedita maxime similique vitae alias, debitis officiis porro at quod impedit quibusdam laboriosam obcaecati sunt quae cupiditate quaerat.
+                        </p>
+                        
+                        <img src="img/Alvara_2023.jpeg" alt="imagem texto">
+
+                        <h2 id="t5" class="text-color-details" style="font-size: 1.5rem;">Documentos necessários</h2>
+                        <p class="text-color-primary">
+                            <ul>
+                                <li>CPF e Documentos com foto;</li>
+                                <li>Certidão de nascimento;</li>
+                                <li>CNH (Carteira Nacional de Habilitação);</li>
+                                <li>Comprovante de residência (Últimos 3 meses);</li>
+                                <li>Holerite (Últimos 2 meses).</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                    <div class="footer-service">
+                        <p class="text-danger m-0">Achou essas informações úteis?</p>
+                        
+                        <button class="btn btn-sm btn-outline-danger">
+                            Sim
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger">
+                            Não
+                            <i class="fa-solid fa-heart-crack"></i>
+                        </button>
+
+                    </div>
+                </div>
+    
+                <div class="col-2"></div>
+            </div>
+        </div>
+        
+    
+        
+    
+
+      
+        <br><br>
+    
+</main>
+    
+    
+</body>
+</html>
+
+<style>
+    
+.box-load{
+    background-color: #ffffff54;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    animation: load 1.5s linear infinite alternate;
+}
+
+@keyframes load{
+    0%{
+        opacity: 25%;
+    }
+    
+    100%{
+        opacity: 100%;
+    }
+}
+
+.content{
+    display: none;
+}
+
+
+
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    function isLoad(){   
+        $(".content").css({
+            'display' : 'block'
+        })
+
+        $(".box-load").css({
+            'display' : 'none'
+        })
+    }
+    
+
+</script>
+
+
