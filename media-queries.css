@@ -83,7 +83,7 @@
         align-items: center;
     }
 
-    .align-content-favorites {
+    .align-content-search {
         display: flex;
         align-items: center;
         flex-direction: column;

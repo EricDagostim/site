@@ -146,7 +146,7 @@ input:focus{
 }
 
 
-.align-content-favorites{
+.align-content-search{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -196,7 +196,7 @@ input:focus{
 }
 
 
-.service-favorite{
+.service-shortcut{
     display: flex;
     background-color: #5b933a1c;
     padding: 10px 20px;
@@ -208,11 +208,11 @@ input:focus{
     justify-content: center;
 }
 
-.service-favorite:hover{
+.service-shortcut:hover{
     background-color: #5b933a2f !important;
 }
 
-.info-service-favorite{
+.info-service-shortcut{
     color: #304126;
     text-decoration: none;
     margin: 2px 0px;
@@ -226,7 +226,7 @@ input:focus{
     gap: 10px;
 }
 
-.info-service-favorite i{
+.info-service-shortcut i{
     color: var(--pallete-color-primary)
 }
 
@@ -254,9 +254,16 @@ input:focus{
 }
 
 .service-found:hover{
-    opacity: 75%;
     transition: 200ms;
 }
+
+.service-found:focus, .service-found:focus-visible, .service-found:focus-within{
+    opacity: 75%;
+    border: none !important;
+    box-shadow: none !important;
+    
+}
+
 
 .info-service-found{
     display: -webkit-box;
@@ -272,7 +279,7 @@ input:focus{
     font-size: 0.7rem;
 }
 
-.box-favorited{
+.fast-access{
     display: flex;
     gap: 10px;
     justify-content: flex-start;
@@ -352,7 +359,7 @@ input:focus{
 
 
 
-.info-service-bar{
+.box-info-service-shortcut{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -361,7 +368,7 @@ input:focus{
 
 
 
-.info-service-favorite h6{
+.info-service-shortcut h6{
     font-size: 0.9rem;
 }
 
