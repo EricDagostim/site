@@ -912,96 +912,78 @@ input:focus{
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 65%;
-    
+    opacity: 65%;   
 }
 
-/* .text-map{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.nav-crumbs{
+    background-color: var(--pallete-color-danger-contrast) !important;
+    padding: 10px 20px;
+    width: fit-content !important;
+    border-radius: 5px;
+    margin-top: -20px !important;
+    z-index: 999;
     
-} */
+    box-shadow: 0px 5px 15px 0px #00000030;
 
+}
 
-.text-map ul li{
+.box-crumbs{
     list-style: none;
-    padding: 0;
     display: flex;
-    flex-direction: column;
-    padding: 2px;
-
-    
-}
-
-.text-map ul{
-    padding: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: fit-content;
+    gap: 10px;
     margin: 0;
 }
 
-.text-map ul li a{
+.box-crumbs ul, .box-crumbs ul li{
+    padding: 0px;
+}
+
+.link-crumbs a, .link-crumbs{
+    color: var(--pallete-color-primary) !important;
     text-decoration: none;
     padding: 2px 5px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #ffffff1f;
-    word-break: break-all;
-
-    display: -webkit-inline-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient:block-axis;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    
-    
 }
 
-.text-map ul li a:hover{
-    text-decoration: none;
+.box-crumbs{
+    padding: 0;
+}
+
+.link-crumbs a:hover{
+    /* color: var(--pallete-color-secondary) !important; */
     color: #e2f5aa;
-    background-color: #ffffff38;
-}
-
-.box-map-text{
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-
-
-    
-}
-
-.map-header h4{
-    font-size: 1.2rem;
-}
-
-.float-map{
-    width: 250px;
-    position: sticky;
-    top: 10px !important;
-    margin-bottom: -220px;
-}
-
-
-.text-content img{
-    margin-bottom: 30px;
-    
-}
-
-.footer-service{
+    background-color: #ffffff1f;
     border-radius: 5px;
-    padding: 10px;
+    text-decoration: none;
+}
+
+.box-crumbs .link-crumbs.active::after{
+    content: " /";
+    color: var(--pallete-color-primary) !important;
+    margin-left: 5px;
+}
+
+.content-header-service{
+    z-index: 999;
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    flex-direction: row;
+    align-items: flex-start;
+    
+    
+}
+
+.profile-service{
+    display: flex;
+
     align-items: center;
 
 }
+
+
+
 
 
 /* Específico de "servico.html" */
