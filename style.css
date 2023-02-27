@@ -941,9 +941,14 @@ input:focus{
     padding: 0px;
 }
 
-.link-crumbs a, .link-crumbs{
+.link-crumbs a{
     color: var(--pallete-color-primary) !important;
     text-decoration: none;
+    padding: 2px 5px;
+}
+
+.link-crumbs{
+    color: var(--pallete-color-medium) !important;
     padding: 2px 5px;
 }
 
