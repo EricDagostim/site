@@ -65,6 +65,8 @@
 	--pallete-color-light-contrast-rgb: 0,0,0;
 	--pallete-color-light-shade: #d7d8da;
 	--pallete-color-light-tint: #f5f6f9;
+
+    
 }
 
 
@@ -1088,6 +1090,39 @@ word-break: break-all;
 
 .title-service{
     font-size: 2rem;
+}
+
+
+.footer-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: fit-content;
+    padding: 10px 20px;
+    background: #ffffff1a;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+
+
+.footer-service button, 
+.footer-service button:hover, 
+.footer-service button:focus-within, 
+.footer-service button:focus-visible, 
+.footer-service button:focus {
+    border-color: #0000003f !important;   
+}
+
+
+.footer-service button{
+    transition: 200ms;
+}
+.footer-service button:hover{
+    background: #ffffff1a;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.25);
+    transition: 200ms;
 }
 
 /* Específico de "servico.html" */
