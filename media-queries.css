@@ -11,6 +11,10 @@
     .button-search {
         width: 80vw;
     }
+
+    .title-service{
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width : 772px){
@@ -66,6 +70,19 @@
 }
 
 @media (max-width : 625px){
+
+    .content-header-service {
+        align-items: center;
+      }
+
+    .title-service{
+        font-size: 1.2rem;
+    }
+
+    .content-access-desciption {
+        flex-direction: column;
+      }
+
     .align-search{
         display: flex;
         flex-direction: column;
@@ -141,6 +158,14 @@
 
     .navbar-background{
         height: 315px;
+    }
+
+    .nav-crumbs {
+        padding: 5px 10px;
+    }
+
+    .link-crumbs a{
+        padding: 0px;
     }
 }
 
