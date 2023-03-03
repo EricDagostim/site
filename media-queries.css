@@ -75,6 +75,10 @@
 
 @media (max-width : 625px){
 
+    .title-service{
+        text-align: center;
+    }
+
     .badges-infos{
         justify-content: flex-start;
     }
