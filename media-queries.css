@@ -19,6 +19,10 @@
 
 @media (max-width : 772px){
 
+    .question-fix p{
+        display: none;
+    }
+
     .box-ad{
         justify-content:flex-start;
     }
@@ -70,6 +74,10 @@
 }
 
 @media (max-width : 625px){
+
+    .badges-infos{
+        justify-content: flex-start;
+    }
 
     .content-header-service {
         align-items: center;

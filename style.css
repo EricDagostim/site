@@ -66,7 +66,8 @@
 	--pallete-color-light-shade: #d7d8da;
 	--pallete-color-light-tint: #f5f6f9;
 
-    
+    --border-color-transparent: #0000003f !important; 
+    --pallete-color-details: #5b933a34; 
 }
 
 
@@ -345,16 +346,17 @@ input:focus{
     justify-content: center;
     align-items: center;
     color: #646464ad !important;
-    
     transform: rotate(45deg);
-
-    background-color: #0000000e !important;
+    background-color: #fff;
     border: 1px solid #00000000 !important;
+    box-shadow: 0px 5px 8px rgb(0 0 0 / 25%);
 }
 
 .btn-pin-disable:hover{  
-    background-color: #92b23338 !important;
-    color: #5B933A !important;
+    background-color: var(--pallete-color-primary) !important;
+    color: #fff !important;
+
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 25%);
 }
 
 .btn-pin-disable img{
@@ -990,14 +992,21 @@ input:focus{
 
 .card-description{
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 11px rgb(0 0 0 / 25%);
     border-radius: 5px;
+    padding: 10px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .card-description p{
     font-size: 1rem;
     font-style: italic;
-    padding: 10px 20px;
+    text-align: justify;
+    
     color: var(--pallete-color-tertiary-contrast);
 }
 
@@ -1063,13 +1072,19 @@ word-break: break-all;
 }
 
 .question-fix{
-    width: fit-content;
-    padding: 10px 20px;
-    border: 1px solid var(--pallete-color-medium-shade);
     border-radius: 5px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.box-btn-pin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
 
 .question-fix p{
@@ -1078,13 +1093,21 @@ word-break: break-all;
 
 .content-access-desciption{
     display: flex;
-    align-items: center;
     gap: 15px;
+    justify-content: center;
 }
 
 .content-access-desciption button{
     white-space: nowrap;
     
+}
+
+.badges-infos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 5px;
 }
 
 
@@ -1112,7 +1135,7 @@ word-break: break-all;
 .footer-service button:focus-within, 
 .footer-service button:focus-visible, 
 .footer-service button:focus {
-    border-color: #0000003f !important;   
+    border-color: var(--border-color-transparent)   
 }
 
 
@@ -1125,4 +1148,24 @@ word-break: break-all;
     transition: 200ms;
 }
 
+.content-description-service{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--pallete-color-danger) !important;
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+.accordion-button:not(.collapsed) {
+    color: var(--pallete-color-primary) !important;
+    background-color: var(--pallete-color-details) !important; 
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
 /* Específico de "servico.html" */
