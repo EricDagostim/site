@@ -829,84 +829,8 @@ input:focus{
 
 /* notícias */
 
-.scroll-news{
-    display: flex;
-    gap: 15px;
-    width: 100vw;
-    padding: 20px;
-    overflow-y: hidden;
-}
-
-.box-news {
-    border-radius: 5px;
-    border: 1px solid #cdcdcd;
-    /* background-color: #5b933a1c; */
-    min-width: 350px ;
-    width: 100%;
-    max-height: 270px;
-    text-decoration: none;
-}
-
-.box-news:hover h1{
-    color: #5B933A !important;
-    transition: 200ms;
-}
-
-/* .box-news:hover img{
-    height: 150px;
-    transition: 400ms;
-} */
-
-
-.box-news .tag-new{
-    position: relative;
-    border-radius: 5px 5px 5px 0px;
-    width: fit-content;   
-    margin-top: -20px;
-}
-
-.box-news img{
-    width: 100%;
-    transition: 200ms;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 5px 5px 0px 0px;
-}
-
-.box-news .content-news h1{
-    color: #304126;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 10px 0px 2px 0px;
-    margin: 0;
-}
-.box-news .content-news p{
-    color: #acacac;
-    font-size: 0.7rem;
-    font-weight: 400;
-    padding: 0px 0px;
-    margin: 0;
-}
-
-.content-news{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-}
-
-.content-all-news h1{
-    font-size: 1rem;
-    color: var(--pallete-color-primary)
-
-}
-
-.content-all-news{
-    display: flex;
-    justify-content: center;
-}
-
 /* notícias */
+
 
 
 /* Específico de "servico.html" */
@@ -1171,9 +1095,79 @@ word-break: break-all;
 }
 
 .accordion-button::after {
-    
     background-image: var(--bs-accordion-btn-icon) !important;
+}
+
+.align-documents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.align-documents a{
+    width: 100%;text-align: left;
+    display: flex;
     
-    
-  }
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+
+
 /* Específico de "servico.html" */
+
+
+/* Carousel */
+
+.carousel-item img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.carousel-caption h4{
+    
+}
+
+.carousel-caption{
+    background-color: #2a39218f;
+    opacity: 100%;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    background-color: #000000b0 !important;
+    backdrop-filter: blur(10px);
+    width: 50px !important;
+}
+
+/* Carousel */
+
+/* Carousel story  */
+
+.circle-story{
+    background-size: cover;
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    border: 2px solid var(--pallete-color-primary-contrast);
+    
+}
+
+.content-story p{
+    color: var(--pallete-color-light);
+}
+
+/* Carousel story  */
+
+
+
+
