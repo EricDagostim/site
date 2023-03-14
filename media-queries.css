@@ -19,6 +19,18 @@
 
 @media (max-width : 772px){
 
+    .content-new-ad{
+        
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-bottom: 10px;
+    }
+
+    .btn-image-notice-on{
+        width: 100%;
+    }
+
     .question-fix p{
         display: none;
     }
